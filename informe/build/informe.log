@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  22 APR 2025 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  23 APR 2025 10:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -804,6 +804,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./images/analema.png>]
+<images/esquema_orbites.png, id=33, 487.8225pt x 475.7775pt>
+File: images/esquema_orbites.png Graphic file (type png)
+<use images/esquema_orbites.png>
+Package pdftex.def Info: images/esquema_orbites.png  used on input line 111.
+(pdftex.def)             Requested size: 203.83417pt x 198.80154pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]\OT1/cmr/m/n/10 (a) |Es-que-ma vi-su-al per en-ten-dre els
+ []
+
+<images/esquema_posicio.png, id=37, 301.125pt x 277.035pt>
+File: images/esquema_posicio.png Graphic file (type png)
+<use images/esquema_posicio.png>
+Package pdftex.def Info: images/esquema_posicio.png  used on input line 117.
+(pdftex.def)             Requested size: 203.83417pt x 187.53586pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -812,12 +828,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3]
-
-Package caption Warning: Unused \captionsetup[sub] on input line 18.
-See the caption package documentation for explanation.
-
-
+[3 <./images/esquema_orbites.png> <./images/esquema_posicio.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -826,7 +837,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4] (C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.aux)
+[4]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6] (C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -838,17 +867,17 @@ Package logreq Info: Writing requests to 'informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22355 strings out of 473523
- 393543 string characters out of 5713662
- 1231368 words of memory out of 5000000
- 45317 multiletter control sequences out of 15000+600000
+ 22401 strings out of 473523
+ 394837 string characters out of 5713662
+ 1238655 words of memory out of 5000000
+ 45355 multiletter control sequences out of 15000+600000
  567671 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,971b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (4 pages, 276654 bytes).
+ 75i,13n,81p,971b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (6 pages, 393682 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 138 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

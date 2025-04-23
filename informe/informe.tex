@@ -98,7 +98,64 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 4}
-\noindent 
+\noindent Per resoldre aquest apartat es necesiten unes matemàtiques complexes i, com s'ha esmentat a l'enunciat de l'entrega, es pot fer us de IA i recursos web. En aquest cas, s'ha emprat com a guía els enllaços \cite{EQ_OF_CENTER}, \cite{E_ANOMALY} i \cite{M_EQ}, encara que els càlculs intermitjos són própis.
+
+\vspace{2mm}
+
+\noindent Començem, doncs, per entendre i definir els paràmetres de les órbites en moviments Keplerians. La posició d'un objecte celeste en el sistema solar es pot definir mitjançant la anomalía veritable $\nu$ (L'angle que escombra la recta que uneix el focus amb l'objecte des del periheli fins a la posició en la órbita real), la anomalía mitja $M$ (L'angle escombrat si l'objecte estigués en una órbita circular de radi $a$, el semieix major de la elípse) o la anomalía excèntrica $E$ (L'angle escombrat en la circunferència hipotètica si la coordenada $x$ és la real). Per trobar les relacions entre $M$ i $\nu$, serà interessant trobar primer les relacions d'ambdós paràmetres amb $E$, per després relacionarles entre sí. Un diagrama dels paràmetres restants es troba en la figura de l'esquerra de \ref{fig:esquema_orbites}.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/esquema_orbites.png}
+        \caption{Esquema visual per entendre els paràmetres. Font: Wikipedia \cite{E_ANOMALY}.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/esquema_posicio.png}
+        \caption{Esquema visual per entendre les diferents àrees necesàries en la demostració. Font: Bogan \cite{M_EQ}.}
+    \end{subfigure}
+    \caption{Esquemes necesàris per entendre la demostració}
+    \label{fig:esquema_orbites}
+\end{figure}
+
+\noindent Per definició d'$E$, $cos(E) = \frac{x}{a}$. Sabem també que l'equació de la elipse és $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ i, com que el primer terme és $cos^2(E)$, el segón ha de ser $sin^2(E)$ per cumplir l'igualtat trigonomètrica. Aquestes dos relacions amb la definició d'excentricitat $\epsilon$ ens donen 3 relacions importants:
+
+\begin{equation} \label{relacions_Eie}
+    \boxed{\cos(E) = \cfrac{x}{a}} \hspace{5mm} \boxed{\sin(E) = \cfrac{y}{b}} \hspace{5mm} \boxed{\epsilon \equiv \sqrt{1-\cfrac{b^2}{a^2}}}
+\end{equation}
+\vspace{2mm}
+
+\noindent Amb aquestes relacions, podem trobar una expresió que ens relacioni $E$ i $\nu$ per començar. Sabem que $cos(E) = \frac{x}{a} = \frac{\epsilon a + rcos(\nu)}{a}$, anem doncs a trobar una expressió per $r$ (Amb arguments geomètrics):
+
+\begin{align*}
+    r^2 &= y^2 + (\epsilon a - x)^2 = b^2 sin ^2(E) + (\epsilon a - acos(E))^2 = ...\\
+    & \hspace{10mm} \left[ \epsilon ^2 = 1- \cfrac{b^2}{a^2} \hspace{2mm} \implies \hspace{2mm} b^2 = a^2 (1-\epsilon^2) \right] \\
+    ... &= a^2 [(1-\epsilon^2)(1-cos^2(E)) + (\epsilon - cos(E))^2] = \\
+    &= a^2 [1 - cos^2(E) -\epsilon ^2 + \epsilon ^2 cos^2(E) + \epsilon^2 + cos^2(E) -2\epsilon cos(E)] = \\
+    &= a^2 [1 - 2\epsilon cos(E) + \epsilon^2 cos^2(E)] = a^2[1-\epsilon cos(E)]^2
+\end{align*}
+
+\noindent Tenint doncs una expressió per $r$, seguim amb el càlcul que estàvem fent abans i, després, per trobar una expressió $sin(E)$ en funció de $\nu$, apliquem la identitat trigonomètrica:
+
+\begin{align*}
+    &cos(E) = \cfrac{\epsilon a + [a(1-\epsilon cos(E))] cos(\nu)}{a} = \epsilon + cos(\nu) - \epsilon cos(E) cos(\nu)\\
+    &cos(E)[1+\epsilon cos(\nu)] = \epsilon + cos(\nu) \hspace{2mm} \implies \hspace{2mm} cos(E) = \cfrac{\epsilon + cos(\nu)}{1 + \epsilon cos(\nu)} //
+\end{align*}
+\begin{align*}
+    &sin(E) = \sqrt{1 - cos^2(E)} = \cfrac{\sqrt{[1+\epsilon cos(\nu)]^2 - [\epsilon + cos(\nu)]^2}}{1+\epsilon cos(\nu)} = \\
+    &\cfrac{\sqrt{1 + \epsilon^2 cos^2(\nu) - \epsilon^2 - cos^2(\nu)}}{1+\epsilon cos(\nu)} = \cfrac{\sqrt{[1-cos^2(\nu)][1-\epsilon^2]}}{1+\epsilon cos(\nu)}
+\end{align*}
+\vspace{2mm}
+\begin{equation} \label{relacions_Enu}
+    \implies \hspace{5mm} \boxed{cos(E) = \cfrac{\epsilon + cos(\nu)}{1 + \epsilon cos(\nu)}} \hspace{5mm} \boxed{sin(E) = \cfrac{\sqrt{1-\epsilon^2} sin(\nu)}{1 + \epsilon cos(\nu)}}
+\end{equation}
+\vspace{2mm}
+
+\noindent Ara que tenim les relacions $E(\nu)$, anem a trobar la relació $M(E)$. Aquesta relació es troba directament de la segona llei de Kepler.
+
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
