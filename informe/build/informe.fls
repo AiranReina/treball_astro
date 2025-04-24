@@ -287,6 +287,11 @@ INPUT .\images\esquema_posicio.png
 INPUT .\images\esquema_posicio.png
 INPUT .\images\esquema_posicio.png
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1095.tfm
+INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti8.tfm
+INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti0800.tfm
+INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
+INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti0600.tfm
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.aux
@@ -294,6 +299,8 @@ INPUT C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\i
 INPUT C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.out
 INPUT C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.run.xml
 OUTPUT C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.run.xml
+INPUT C:\Users\Usuario\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1095.pk
+INPUT C:\Users\Usuario\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1095.pk
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
@@ -314,6 +321,8 @@ INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\Usuario\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb

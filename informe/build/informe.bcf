@@ -2388,6 +2388,7 @@
     <bcf:citekey order="11" intorder="1">E_ANOMALY</bcf:citekey>
     <bcf:citekey order="12" intorder="1">M_EQ</bcf:citekey>
     <bcf:citekey order="13" intorder="1">M_EQ</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">EQ_OF_CENTER</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -28,7 +28,7 @@
 \setcounter{tocdepth}{1}
 \renewcommand{\cftdot}{.}
 \pagestyle{fancy}
-\lhead{Treball de Simulació}
+\lhead{Treball d'Astrofísica}
 \rhead{}
 
 \begin{document}
@@ -70,6 +70,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 1}
+
 \noindent Un analema és la corba que descriu el Sol al cel si s’observa des d'un lloc fix, a la mateixa hora del dia, cada dia de l’any. L’analema forma una corba que, aproximadament sol ser, una forma de vuit o lemniscata. Es poden observar analemes en altres planetes del Sistema Solar, però tenen una forma diferent de la que s’observa a la Terra, podent arribar a ser corbes diferents d’un vuit (a Mart és molt semblant a una gota d’aigua), tot i que tenen com a característica comuna que sempre són tancades \cite{DEFINICIO_ANALEMA}. Un exemple d’analema és el que es pot observar a la figura \ref{fig:analema}.
 
 \begin{figure}[h!]
@@ -78,6 +79,9 @@
     \caption{Analema solar per un observador a l'hemisfèri nord. Font: Wikipedia \cite{DEFINICIO_ANALEMA}.}
     \label{fig:analema}
 \end{figure}
+\vspace{10mm}
+\hrule\
+\vspace{5mm}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,6 +89,8 @@
 
 \section*{EXERCICI 2}
 \noindent  En coordenades equatorials, un objecte en la bòveda celeste es pot localitzar amb les coordenades "ascensió recta" ($\alpha$ o $ra$) i "declinació" ($\delta$ o $dec$). El pla des d'ón es defineixen les coordenades és l'equador celestial, que és el pla perpendicular a l'eix de rotació de la Terra coincident amb l'equador terrestre. La declinació és l'angle entre l'equador i el cos celeste i, l'ascensió recta, és l'angle (En hores) del cos al voltant de l'equador celestial. El moviment vertical aparent del Sol en l'analema prové del canvi en la declinació solar al llarg de l'any degut a que la Terra orbita al voltant del Sol amb l'eix de rotació inclinat uns 23.5 graus respecte al pla de l'òrbita \cite{ANALEMA_WIKI}.
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,6 +98,8 @@
 
 \section*{EXERCICI 3}
 \noindent El moviment transversal (Est-Oest) aparent del Sol en l'analema prové del canvi no uniforme de l'ascensió recta solar al llarg de l'any degut als efectes combinats de la inclinació de l'eix de rotació de la Terra i l'eccentricitat de l'òrbita terrestre (Que genera una variació de la velocitat orbital de la Terra al llarg de l'any) \cite{ANALEMA_WIKI}. Aquests dos efectes generen una desigualtat en el moviment aparent del Sol al llarg de l’equador celeste, de manera que el Sol no arriba cada dia al meridià a la mateixa hora segons un rellotge mitjà. Aquest desfasament es quantifica mitjançant l’equació del temps, que expressa la diferència entre el temps solar veritable (Marcat per la posició real del Sol) i el temps solar mitjà (Definit per un moviment solar fictici uniforme) \cite{EQ_OF_TIME}.
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -142,7 +150,7 @@
 
 \begin{align*}
     &cos(E) = \cfrac{\epsilon a + [a(1-\epsilon cos(E))] cos(\nu)}{a} = \epsilon + cos(\nu) - \epsilon cos(E) cos(\nu)\\
-    &cos(E)[1+\epsilon cos(\nu)] = \epsilon + cos(\nu) \hspace{2mm} \implies \hspace{2mm} cos(E) = \cfrac{\epsilon + cos(\nu)}{1 + \epsilon cos(\nu)} //
+    &cos(E)[1+\epsilon cos(\nu)] = \epsilon + cos(\nu) \hspace{2mm} \implies \hspace{2mm} cos(E) = \cfrac{\epsilon + cos(\nu)}{1 + \epsilon cos(\nu)} \\
 \end{align*}
 \begin{align*}
     &sin(E) = \sqrt{1 - cos^2(E)} = \cfrac{\sqrt{[1+\epsilon cos(\nu)]^2 - [\epsilon + cos(\nu)]^2}}{1+\epsilon cos(\nu)} = \\
@@ -154,8 +162,60 @@
 \end{equation}
 \vspace{2mm}
 
-\noindent Ara que tenim les relacions $E(\nu)$, anem a trobar la relació $M(E)$. Aquesta relació es troba directament de la segona llei de Kepler.
+\noindent Ara que tenim les relacions $E(\nu)$, anem a trobar la relació $M(E)$. Aquesta relació es troba directament de la segona llei de Kepler. La segona llei de Kepler ens diu que "\textit{El segment que uneix un planeta amb el Sol escombra arees iguals per temps iguals}". Per intentar trobar la relació $M(E)$, necesitem definir 3 àrees diferents i aplicar la segona llei de Kepler. Si observem la imatge de la dreta de la figura \ref{fig:esquema_orbites}, definim l'àrea de referència ($A_{ref}$) com l'àrea que escombra el radi de la circunferència hipotètica que forma un angle $E$; definim l'àrea auxiliar ($A_{aux}$) com l'àrea escombrada en l'elipse pel segment que uneix el centre amb l'objecte real; finalment, definim l'àrea real ($A_{real}$) com l'àrea escombrada en l'elipse pel segment que uneix el focus amb l'objecte real (Es veu sombrejat en verd en la imatge esmentada). Definint aquestes àrees, tenim:
 
+\begin{align*}
+    &A_{ref} = \textit{(Fracció Angular) ·} \hspace{1mm}  A_{cercle} = \cfrac{E}{2\pi}\pi a^2 = E\cfrac{a^2}{2} \\
+    &A_{aux} = A_{ref} \cfrac{b}{a} = A_{ref} \sqrt{1-\epsilon^2} = E\cfrac{a^2}{2} \sqrt{1-\epsilon^2} \\
+    &\left[ A_{aux} - A_{real} = A_{triangle}\cfrac{b}{a} = \cfrac{[base][altura]}{2}\cfrac{b}{a} = \cfrac{[a][a\epsilon sin(E)]}{2} \sqrt{1-\epsilon ^2} \right] \\
+    &A_{real} = A_{aux} - A_{triangle} = \cfrac{a^2}{2} \sqrt{1-\epsilon^2} [E - \epsilon sin(E)] \\
+\end{align*}
+
+\noindent La segona llei de Kepler ens diu que $\frac{A}{t} = ct$ $\implies$ $A = Kt$ $\forall t$, en especial és vàlid per $t=T$, que és l'àrea de l'elipse sencera, $A = \pi ab = \pi a^2 \sqrt{1-\epsilon^2} = KT$. Per tant, podem escriure:
+
+\begin{align*}
+    &KT = \pi a^2 \sqrt{1-\epsilon^2} \hspace{2mm} \implies \hspace{2mm} K = \cfrac{\pi a^2}{T} \sqrt{1-\epsilon^2} \\
+    &Kt = \cfrac{\pi a^2}{T} \sqrt{1-\epsilon^2} t = \cfrac{a^2}{2} \sqrt{1-\epsilon^2} [E - \epsilon sin(E)] \hspace{2mm} \implies \hspace{2mm} \cfrac{2\pi t}{T} = E - \epsilon sin(E) \\
+\end{align*}
+
+\noindent Com sabem, $M$ és la posició hipotètica en l'órbita circular. Com l'órbita és circular, per la primera llei de Kepler sabem que el Sol s'ha de trobar al centre i, per tant, la velocitat angular és constant. Per aquesta raó, podem definir $M$ com l'angle escombrat en el temps $t$, és a dir, $M \equiv 2\pi \cfrac{t}{T}$, per tant:
+
+\begin{equation} \label{relacio_ME}
+    \boxed{M(E) = E - \epsilon sin(E)}
+\end{equation}
+\vspace{2mm}
+
+\noindent Ara, ja tenim totes les relacions necesàries per trobar $M(\nu)$. Per trobar aquesta relació, només hem de substituir la relació $E(\nu)$(Eq. \ref{relacions_Enu}) del $sin(E)$ en la relació $M(E)$ (Eq. \ref{relacio_ME}). Un cop fet això, trobem la relació no trascendental següent:
+
+\vspace{2mm}
+\begin{equation} \label{relacio_Mnu}
+    \boxed{ M(\nu) = arcsin \left[ \cfrac{\sqrt{1-\epsilon ^2} sin(\nu)}{1 + \epsilon cos(\nu)} \right] - \epsilon \cfrac{\sqrt{1-\epsilon ^2} sin(\nu)}{1 + \epsilon cos(\nu)} }
+\end{equation}
+\vspace{2mm}
+
+\noindent Com es pot observar, trobar la relació inversa $\nu(M)$ es complica bastant. En el moviment Keplerià, les coordenades del cos celeste es repeteixen de manera periòdica en cada òrbita, fet que permet descriure-les mitjançant sèries periòdiques en funció de variables angulars creixents. L’anomalia mitjana $M$, que creix linealment amb el temps, és especialment útil perquè permet expressar altres variables orbitals en funció del temps. L’anomalia veritable $\nu$, tot i ser analítica respecte de $M$, no és una funció entera i té un radi de convergència limitat si s’expressa com a sèrie de potències. Tanmateix, com a funció periòdica, es pot representar per una sèrie de Fourier que convergeix globalment. Els coeficients d’aquesta sèrie depenen d'$\epsilon$ i s’expressen mitjançant funcions de Bessel del primer tipus. De forma genèrica, la serie que aproxima la funció $\nu(M)$ és:
+
+\begin{equation*}
+    \nu(M) = M + 2\sum_{s=1}^{\infty} \cfrac{1}{s} \left[ J_s(s\epsilon) + \sum_{p=1}^{\infty} e^{-p}[1-\sqrt{1-\epsilon^2}]^p[J_{s-p}(s\epsilon) - J_{s+p}(s\epsilon)] \right] sin(sM)
+\end{equation*}
+\vspace{2mm}
+
+\noindent Si expandim cadascuna de les funcions de Bessel i aproximem per $\epsilon \to 0$ (Que és bona aproximació considerant que per la Terra $\epsilon \approx 0.0167$), podem trobar una aproximació de la funció $\nu(M)$ que és vàlida per a qualsevol valor de $M$. Aquesta aproximació queda com:
+
+\vspace{2mm}
+\begin{equation} \label{aproximacio_Mnu}
+    \boxed{  \nu(M) \simeq M + 2\epsilon sin(M) + \cfrac{5}{4} \epsilon ^2 sin(2M)  }
+\end{equation}\
+\vspace{2mm}
+
+\noindent Ón hem aproximat per sota d'ordre $\epsilon^3$. L'explicació de la versió aproximada de $\nu(M)$ és bastant complexe i requereix matemàtiques extenses y avançades. Com s'ha dit a l'inici d'aquest exercici, s'han emprat diversos recursos com a guía. En específic, per aquesta part final, s'ha emprat la referència \cite{EQ_OF_CENTER} de la Wikipedia. Per trobar una expresió de major ordre, es poden trobar els termes d'ordre superior en la referència esmentada.
+
+\vspace{2mm}
+
+\noindent Finalment, per completitud, cal esmentar que la diferència $\nu - M$ és la quantitat anomenada "Equació de centre". Amb l'aproximació feta, l'equació de centre és  $C(M) \simeq 2\epsilon sin(M) + \frac{5}{4} \epsilon ^2 sin(2M)$. Aquesta quantitat és un paràmetre clau a l'hora de trobar la "Equació de temps", que ens permetrà graficar l'analema solar en exercicis propers.
+
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,6 +223,8 @@
 
 \section*{EXERCICI 5}
 \noindent ahajaklsl
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,6 +232,8 @@
 
 \section*{EXERCICI 6}
 \noindent ahajaklsl
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,6 +241,8 @@
 
 \section*{EXERCICI 7}
 \noindent ahajaklsl
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -184,6 +250,8 @@
 
 \section*{EXERCICI 8}
 \noindent ahajaklsl
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -191,6 +259,8 @@
 
 \section*{EXERCICI 9}
 \noindent ahajaklsl
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -198,6 +268,8 @@
 
 \section*{EXERCICI 10}
 \noindent ahajaklsl
+\vspace{10mm}
+\hrule\
 \vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,21 +1,25 @@
 # Fdb version 4
-["biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"] 1745395638.81745 "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe" 1745398311.89184 0
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" 1745398311.63049 108719 569bcd0ed064fcec72b11a5b710c50d1 ""
+["biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"] 1745505538.75379 "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe" 1745507490.75233 0
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" 1745507490.48234 108787 cde56cbe62d7f6d93acef1524737365b ""
   "bib.bib" 1745394466.45865 1178 8b79dd60128aee3d45bee5bbfc43c3e8 ""
   (generated)
   "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl"
   "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.blg"
   (rewritten before read)
-["biber build/informe"] 1745395632.8765 "build/informe.bcf" "build/informe.bbl" "build/informe" 1745398311.89058 0
+["biber build/informe"] 1745505520.45828 "build/informe.bcf" "build/informe.bbl" "build/informe" 1745507490.7511 0
   "bib.bib" 1745394466.45865 1178 8b79dd60128aee3d45bee5bbfc43c3e8 ""
-  "build/informe.bcf" 1745398311.63049 108719 569bcd0ed064fcec72b11a5b710c50d1 "pdflatex"
+  "build/informe.bcf" 1745507490.48234 108787 cde56cbe62d7f6d93acef1524737365b "pdflatex"
   (generated)
   "build/informe.bbl"
   "build/informe.blg"
   (rewritten before read)
-["pdflatex"] 1745398309.77196 "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" "build/informe.pdf" "informe" 1745398311.89298 0
+["pdflatex"] 1745507488.7583 "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" "build/informe.pdf" "informe" 1745507490.75351 0
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745320845.48625 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk" 1745501289.8507 15464 432c85c2f2690b3b3a32b3c28ce02c06 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1742563989.62783 12037057 4ac1caa1311fd0cc730fe8673da632ed ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcti0600.tfm" 993062556 1612 3ecf85fe4d575e26260379ba863bb65e ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcti0800.tfm" 993062556 1600 6620f5794d4bae3a8fc21a9a7e60fe3f ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcti1095.tfm" 993062558 1620 f8200b113a15837b4c49dca3f7704b92 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -39,6 +43,8 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti7.tfm" 1136765053 1492 86331993fe614793f5e7e755835c31c5 ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti8.tfm" 1136765053 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmtt10.tfm" 1136765053 768 1321e9409b4137d6fb428ac9dc956269 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
@@ -50,6 +56,7 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1247596667 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -144,14 +151,14 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1730400552 10214 61188260d324e94bc2f66825d7d3fdf4 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.aux" 1745398311.62547 2592 0d4f667624d6bc718009121491218ee5 ""
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" 1745395644.51648 8373 faf8f2d33b07be880ba67c34a9f3ea49 "biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.out" 1745398311.3295 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "build/informe.aux" 1745398311.62547 2592 0d4f667624d6bc718009121491218ee5 "pdflatex"
-  "build/informe.bbl" 1745395644.51648 8373 faf8f2d33b07be880ba67c34a9f3ea49 "biber build/informe"
-  "build/informe.out" 1745398311.3295 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "build/informe.run.xml" 1745398311.63249 2360 4c26a45d7cdd3d1cf623487293ddf3f3 "pdflatex"
-  "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" 1745398306.32521 10121 d84e995daffc2f2ef1b7ed0acd85e1a4 ""
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.aux" 1745507490.47734 2801 34446588f4449a61bd9d93b7af2ee9b1 ""
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" 1745505544.40926 8373 faf8f2d33b07be880ba67c34a9f3ea49 "biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.out" 1745507490.16077 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "build/informe.aux" 1745507490.47734 2801 34446588f4449a61bd9d93b7af2ee9b1 "pdflatex"
+  "build/informe.bbl" 1745505544.40926 8373 faf8f2d33b07be880ba67c34a9f3ea49 "biber build/informe"
+  "build/informe.out" 1745507490.16077 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "build/informe.run.xml" 1745507490.48475 2360 4c26a45d7cdd3d1cf623487293ddf3f3 "pdflatex"
+  "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" 1745507488.06359 15871 d257e10ec0e64a9dfffcb43e6d85269b ""
   "images/Logo_uab.png" 1745321769.59889 137357 901e0a379faa11529a5403fed03c5ce3 ""
   "images/analema.png" 1745326468.21555 34220 11dc368e0c31f320e30fa9ba6cb51f12 ""
   "images/esquema_orbites.png" 1745394356.20652 35989 1c24565a69528387375ba00910b0c11f ""
