@@ -1,16 +1,16 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
-[1] Config.pm:311> INFO - Logfile is 'C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.blg'
-[270] biber-MSWIN64:340> INFO - === 
-[363] Biber.pm:420> INFO - Reading 'C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf'
-[643] Biber.pm:994> INFO - Found 6 citekeys in bib section 0
-[674] Biber.pm:4463> INFO - Processing section 0
-[711] Biber.pm:4654> INFO - Looking for bibtex file 'bib.bib' for section 0
-[814] bibtex.pm:1713> INFO - LaTeX decoding ...
-[836] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
-[1026] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1026] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1026] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'ca-AD'
-[1047] bbl.pm:676> INFO - Writing 'C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl' with encoding 'UTF-8'
-[1054] bbl.pm:779> INFO - Output to C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl
-[1055] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\Usuario\AppData\Local\Temp\biber_tmp_ZtQw\283e1cb250985c2debc501124f55eeff_2796.utf8, line 44, warning: undefined macro "unknown"
-[1055] Biber.pm:133> INFO - WARNINGS: 1
+[0] Config.pm:311> INFO - Logfile is 'C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.blg'
+[110] biber-MSWIN64:340> INFO - === 
+[151] Biber.pm:420> INFO - Reading 'C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf'
+[256] Biber.pm:994> INFO - Found 6 citekeys in bib section 0
+[271] Biber.pm:4463> INFO - Processing section 0
+[285] Biber.pm:4654> INFO - Looking for bibtex file 'bib.bib' for section 0
+[349] bibtex.pm:1713> INFO - LaTeX decoding ...
+[364] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
+[422] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[422] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
+[422] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'ca-AD'
+[430] bbl.pm:676> INFO - Writing 'C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl' with encoding 'UTF-8'
+[433] bbl.pm:779> INFO - Output to C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl
+[433] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\Usuario\AppData\Local\Temp\biber_tmp_Tz06\283e1cb250985c2debc501124f55eeff_5452.utf8, line 44, warning: undefined macro "unknown"
+[433] Biber.pm:133> INFO - WARNINGS: 1

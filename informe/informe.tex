@@ -222,7 +222,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 5}
-\noindent ahajaklsl
+\noindent L’equació del temps descriu la discrepància entre dos tipus de temps solar. Aquests dos temps són el temps solar aparent, que segueix directament el moviment del Sol, i el temps solar mitjà, que segueix un Sol teòric amb un moviment uniforme al llarg de l’equador celeste. El temps solar aparent es pot obtenir mesurant la posició actual (angle horari) del Sol, tal com indica (amb precisió limitada) un rellotge de sol. El temps solar mitjà, per al mateix lloc, seria el temps indicat per un rellotge regular ajustat de manera que, al llarg de l’any, les seves diferències respecte al temps solar aparent tinguin una mitjana de zero.
+
+\vspace{2mm}
+
+\noindent L’equació del temps presenta dues oscil·lacions amb forma d’ona sinusoïdal perquè hi ha dues causes físiques independents que afecten el moviment aparent del Sol respecte al temps solar mitjà. La primera és l’excentricitat de l’òrbita terrestre: com que l’òrbita de la Terra és el·líptica, la seva velocitat orbital varia al llarg de l’any. Aquesta variació provoca una desviació periòdica en la posició del Sol aparent, amb una ona sinusoïdal de període anual. La segona causa és la inclinació de l’eix de rotació de la Terra respecte al pla de la seva òrbita (la eclíptica). Aquest angle d’uns $\sim 23.5\degree$ fa que el moviment aparent del Sol al llarg de l’equador celeste no sigui uniforme, i això introdueix una segona variació també de tipus sinusoïdal, però amb el doble de freqüència angular. El efecte de la doble freqüència prové de que, en projectar el sol sobre el pla eclíptic celeste, ens dona una expresió de la forma $tan(\alpha) = cos(\sim 23.5 \degree) tan(\lambda)$, on $\alpha$ és l'ascensió recta i $\lambda$ és la longitud eclíptica. Quan expandim la funció $\alpha(\lambda)$ en aquesta expressió, trobem que s'aproxima a una serie de Fourier truncada de forma que queda $\alpha(\lambda) = \lambda - Csin(2\lambda) + ...$, ón $A$ és una constant.
+
+\vspace{2mm}
+
+\noindent La forma general de l'equació, trobada teòricament, és $\Delta t_{AM} \approx Asin(\omega t) + Bsin(2\omega t)$. En la literatura es troba una expressió on s'han aproximat experimentalment els valors de $A$, $B$ i $\omega$, que és \cite{EQ_OF_TIME}:
+
+\begin{equation} \label{eq_time}
+    \boxed{\Delta t_{AM}(y,d) = -7.659sin[D(y,d)] + 9.863 sin[2D(y,d) + 3.5932] \hspace{1mm} [minuts]} \hspace{5mm} \text{tal que:}
+\end{equation}
+\begin{equation*}
+    D(y,d) = 6.24004077 + 0.01720197[365(y-2000) + d] \hspace{5mm} \text{(Ón $d$ és el dia de l'any $y$)}
+\end{equation*}
+\vspace{2mm}
+
+\noindent Aquesta expressió es pot avaluar per l'any 2025 si substituim aquest valor en la funció auxiliar $D(y,d)$. Aquesta funció auxiliar queda doncs com:
+
+\begin{equation} \label{D_2025}
+    \boxed{D(2025,d) \equiv D(d) = 163.3155293 + 0.01720197d}
+\end{equation}
+\vspace{2mm}
+
+\noindent És interessant observar com l'equació del temps està relacionada directament amb el temps sideral aparent o, simplement, el temps sideral ($T_{sideral}$). Mentre que el temps solar es basa en la rotació de la Terra en relació amb el Sol, el temps sideral es basa en la rotació de la Terra respecte a les estrelles fixes del cel. Un dia sideral té una durada de 23 hores, 56 minuts i 4 segons, mentre que un dia solar, que és el temps que mesuren els rellotges habituals, té una durada de 24 hores. Aquesta diferència es deu al fet que la Terra, a mesura que rota sobre el seu eix, també es mou una mica en la seva òrbita al voltant del Sol, i per tant necessita fer una mica més de rotació per tornar a situar el Sol en la mateixa posició al cel. Es pot demostrar que $T_{aparent} = T_{sideral} + \alpha$ \cite{EQ_OF_TIME}, on $\alpha$ és l'ascensió recta del Sol.  
+
 \vspace{10mm}
 \hrule\
 \vspace{5mm}
@@ -231,7 +257,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 6}
-\noindent ahajaklsl
+
+\noindent Per realitzar aquest exercici, s'ha escrit un script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu analema.py. El codi et calcula la posició del Sol (dec,ra), et calcula la diferencia entre el temps solar mitjà i el temps solar aparent a partir de l'equació del temps i, finalment, et ploteja l'analema solar vist des de Bellaterra. La imatge generada es pot veure en la figura \ref{fig:analema_codi}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/analema_codi.png}
+    \caption{Analema solar vist des de Bellaterra. Font: Github del treball.}
+    \label{fig:analema_codi}
+\end{figure}
+\vspace{2mm}
+
+\noindent Eajldkdlsñ
+
 \vspace{10mm}
 \hrule\
 \vspace{5mm}

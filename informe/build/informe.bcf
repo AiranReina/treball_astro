@@ -2389,6 +2389,8 @@
     <bcf:citekey order="12" intorder="1">M_EQ</bcf:citekey>
     <bcf:citekey order="13" intorder="1">M_EQ</bcf:citekey>
     <bcf:citekey order="14" intorder="1">EQ_OF_CENTER</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">EQ_OF_TIME</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">EQ_OF_TIME</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
