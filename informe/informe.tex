@@ -327,19 +327,19 @@
         \hline
         Planeta & Inclinació [$\degree$] & Excentricitat $\epsilon$ \\
         \hline
-        Mercuri & 0.03 & 0.20563069 \\
-        Terra & 23.44 & 0.01671022 \\
-        Mart & 25.19 & 0.09341233 \\
-        Júpiter & 3.12 & 0.04839266 \\
-        Saturn & 26.73 & 0.05415060 \\
+        Mercuri & 0.03 & 0.21 \\
+        Terra & 23.44 & 0.0167 \\
+        Mart & 25.19 & 0.093 \\
+        Júpiter & 3.13 & 0.0485 \\
+        Saturn & 26.73 & 0.056 \\
         \hline
     \end{tabular}
-    \caption{Dades dels planetes. Font: Wikipedia \cite{PLANETES}.}
+    \caption{Dades dels planetes. Font: analemma.com \cite{PLANETES}.}
     \label{tab:planetes}
 \end{table}
 \vspace{2mm}
 
-\noindent Per realitzar una bona comparativa, s'han generat els analemes per cada planeta i s'han comparat amb el generat pel script de l'Stellarium \cite{SCRIPT_STELLARIUM}. A l'annex es poden trobar les gràfiques generades per cada planeta comparades amb el generat per l'Stellarium. Per realitzar aquest apartat s'ha escrit un nou script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu $analema_planetes.py$. El codi et calcula la declinació del sol a cada planeta, et calcula la diferència entre el temps solar mitjà i el temps solar aparent a partir d'una versió de l'equació del temps diferent a la de l'exercici 6 i, finalment, et grafica l'analema solar vist des de cadascún dels planetes. L'equació del temps utilitzada en aquest apartat és $EoT = M - ra$ (On $ra$ és l'ascensió recta del sol i $M$ és l'anomalia mitjana) i, ara, $M$ i $ra$ es troben emprant l'expressió exacta de l'exercici 4 truncada a 20 termes de la sèrie de Bessel. A més, s'ha obtingut la declinació i no s'ha emprat la llibreria ephem, ja que la llibreria et troba la declinació del sol vist des de la Terra.
+\noindent Per realitzar una bona comparativa, s'han generat els analemes per cada planeta i s'han comparat amb el observat si ens localitzem en el planeta en qüestió a l'Stellarium i augmentem els díes. A l'annex es poden trobar les gràfiques generades per cada planeta. Per realitzar aquest apartat s'ha escrit un nou script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu $analema\_planetes.py$. El codi et calcula la declinació del sol a cada planeta, et calcula la diferència entre el temps solar mitjà i el temps solar aparent a partir d'una versió de l'equació del temps diferent a la de l'exercici 6 i, finalment, et grafica l'analema solar vist des de cadascún dels planetes. L'equació del temps utilitzada en aquest apartat és $EoT = M - ra$ (On $ra$ és l'ascensió recta del sol i $M$ és l'anomalia mitjana) i, ara, $M$ i $ra$ es troben emprant l'expressió exacta de l'exercici 4 truncada a 20 termes de la sèrie de Bessel. A més, s'ha obtingut la declinació i no s'ha emprat la llibreria ephem, ja que la llibreria et troba la declinació del sol vist des de la Terra. Aquests canvis es deuen a que és necesàri modificar els paràmetres de les òrbites planetàries i, per tant, no es pot emprar el codi $analema.py$.
 
 \vspace{2mm}
 

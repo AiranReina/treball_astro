@@ -2404,7 +2404,6 @@
     <bcf:citekey order="27" intorder="1">SCRIPT_STELLARIUM</bcf:citekey>
     <bcf:citekey order="28" intorder="1">SCRIPT_STELLARIUM</bcf:citekey>
     <bcf:citekey order="29" intorder="1">SCRIPT_STELLARIUM</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">SCRIPT_STELLARIUM</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
