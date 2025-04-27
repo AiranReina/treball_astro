@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  27 APR 2025 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  27 APR 2025 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -789,7 +789,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/Logo_uab.png>]
-<images/analema.png, id=15, 526.96875pt x 426.59375pt>
+<images/analema.png, id=18, 526.96875pt x 426.59375pt>
 File: images/analema.png Graphic file (type png)
 <use images/analema.png>
 Package pdftex.def Info: images/analema.png  used on input line 78.
@@ -804,7 +804,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./images/analema.png>]
-<images/esquema_orbites.png, id=33, 487.8225pt x 475.7775pt>
+<images/esquema_orbites.png, id=36, 487.8225pt x 475.7775pt>
 File: images/esquema_orbites.png Graphic file (type png)
 <use images/esquema_orbites.png>
 Package pdftex.def Info: images/esquema_orbites.png  used on input line 119.
@@ -814,7 +814,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--120
 []\OT1/cmr/m/n/10 (a) |Es-que-ma vi-su-al per en-ten-dre els
  []
 
-<images/esquema_posicio.png, id=37, 301.125pt x 277.035pt>
+<images/esquema_posicio.png, id=40, 301.125pt x 277.035pt>
 File: images/esquema_posicio.png Graphic file (type png)
 <use images/esquema_posicio.png>
 Package pdftex.def Info: images/esquema_posicio.png  used on input line 125.
@@ -856,7 +856,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-<images/analema_alt.png, id=85, 502.5174pt x 527.3301pt>
+<images/analema_alt.png, id=88, 502.5174pt x 527.3301pt>
 File: images/analema_alt.png Graphic file (type png)
 <use images/analema_alt.png>
 Package pdftex.def Info: images/analema_alt.png  used on input line 265.
@@ -871,7 +871,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7 <./images/analema_alt.png>]
-<images/analema_real.png, id=96, 429.85594pt x 727.96968pt>
+<images/analema_real.png, id=99, 429.85594pt x 727.96968pt>
 File: images/analema_real.png Graphic file (type png)
 <use images/analema_real.png>
 Package pdftex.def Info: images/analema_real.png  used on input line 291.
@@ -904,17 +904,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10]
-<images/analema_Mercuri.png, id=117, 564.4287pt x 708.246pt>
+<images/analema_Mercuri.png, id=120, 564.4287pt x 708.246pt>
 File: images/analema_Mercuri.png Graphic file (type png)
 <use images/analema_Mercuri.png>
 Package pdftex.def Info: images/analema_Mercuri.png  used on input line 362.
 (pdftex.def)             Requested size: 235.54523pt x 295.55927pt.
-<images/analema_Terra_stellarium.png, id=118, 429.85594pt x 727.96968pt>
+<images/analema_Terra_stellarium.png, id=121, 429.85594pt x 727.96968pt>
 File: images/analema_Terra_stellarium.png Graphic file (type png)
 <use images/analema_Terra_stellarium.png>
 Package pdftex.def Info: images/analema_Terra_stellarium.png  used on input line 368.
 (pdftex.def)             Requested size: 172.13pt x 291.50484pt.
-<images/analema_Terra.png, id=121, 564.4287pt x 708.246pt>
+<images/analema_Terra.png, id=124, 564.4287pt x 708.246pt>
 File: images/analema_Terra.png Graphic file (type png)
 <use images/analema_Terra.png>
 Package pdftex.def Info: images/analema_Terra.png  used on input line 373.
@@ -933,7 +933,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [11 <./images/analema_Mercuri.png> <./images/analema_Terra_stellarium.png (PNG copy)> <./images/analema_Terra.png>]
-<images/analema_Mart.png, id=131, 564.4287pt x 708.246pt>
+<images/analema_Mart.png, id=134, 564.4287pt x 708.246pt>
 File: images/analema_Mart.png Graphic file (type png)
 <use images/analema_Mart.png>
 Package pdftex.def Info: images/analema_Mart.png  used on input line 390.
@@ -942,7 +942,7 @@ File: images/analema_Terra_stellarium.png Graphic file (type png)
 <use images/analema_Terra_stellarium.png>
 Package pdftex.def Info: images/analema_Terra_stellarium.png  used on input line 396.
 (pdftex.def)             Requested size: 172.13pt x 291.50484pt.
-<images/analema_Júpiter.png, id=134, 564.6696pt x 708.0051pt>
+<images/analema_Júpiter.png, id=137, 564.6696pt x 708.0051pt>
 File: images/analema_Júpiter.png Graphic file (type png)
 <use images/analema_Júpiter.png>
 Package pdftex.def Info: images/analema_Júpiter.png  used on input line 401.
@@ -961,7 +961,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12 <./images/analema_Mart.png> <./images/analema_Júpiter.png>]
-<images/analema_Saturn.png, id=144, 564.4287pt x 708.246pt>
+<images/analema_Saturn.png, id=147, 564.4287pt x 708.246pt>
 File: images/analema_Saturn.png Graphic file (type png)
 <use images/analema_Saturn.png>
 Package pdftex.def Info: images/analema_Saturn.png  used on input line 418.
@@ -1013,9 +1013,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,13n,81p,1447b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (14 pages, 2552179 bytes).
+Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (14 pages, 2553407 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
+ 249 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
