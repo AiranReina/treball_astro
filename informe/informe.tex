@@ -268,7 +268,11 @@
 \end{figure}
 \vspace{2mm}
 
-\noindent Eajldkdlsñ
+\noindent Com es pot observar, l'analema solar pateix una petita inlinació. Un analema es veu perfectament verticual quan s'observa des de l'equador a longituds específiques on el migdia solar mitjà coincideix amb el migdia solar aparent. Quan es varia la latitud respecte a l'equador, l'analema es va inlinant lleugerament degut a la inclinació de l'eix terrestre i l'excentricitat de l'òrbita de la Terra.
+
+\vspace{2mm}
+
+\noindent Finalment, és interessant analitzar l'analema que es troba en la paret de la facultat de ciències de l'UAB (La imatge es troba en l'anunciat, que es pot trobar en el Github del treball). La figura mostra un conjunt d'analemas observats des de Bellaterra per diferents hores del día. Els analemmes tenen un loop més gros (Decembre-Gener) i un més prim (Juny-Juliol). Els analemes es mostren inclinats com es pot esperar a una latitud com Bellaterra. A priori, sembla que els analemes estan representats de forma correcta, tot i que no es pot assegurar amb exactitud degut a que faria falta un estudi més exhaustiu.
 
 \vspace{10mm}
 \hrule\
@@ -278,7 +282,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 7}
-\noindent ahajaklsl
+
+\noindent Anem a comparar doncs si l'analema que s'ha generat en aquest treball és correcte. En l'aplicació d'ordinador Stellarium hi ha una opció d'executar scripts d'usuaris. Hi ha un script que genera un analema visual \cite{SCRIPT_STELLARIUM}. Cal recalcar que aquest script genera un analema solar a 2020, però, si en l'animació abans de que es generi l'analema cambiem la data, et genera l'analema pel 2025. La figura \ref{fig:analema_real} mostra l'analema generat per l'script en l'Stellarium.
+
+\vspace{2mm}
+\begin{figure} [h!]
+    \centering
+    \includegraphics[width=0.40\textwidth]{images/analema_real.png}
+    \caption{Analema solar generat per l'script de l'Stellarium. Font: Alexander Wolf.}
+    \label{fig:analema_real}
+\end{figure}
+\vspace{2mm}
+
+\noindent Com es pot veure si es compara amb la figura \ref{fig:analema_alt}, ambdós analemas són, en esència, el mateix. Els dos es troben inclinats lleugerament cap a l'esquerra i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud per sobre dels $70 \degree$ i un mínim d'altitud per sota dels $30 \degree$. També, es pot observar que el analema de l'Stellarium està limitat en un azimut de $[175\degree ,185\degree]$ i, el generat propi, està limitat a $5 \degree$ per banda al voltant del meridià ón està centrar; ambdós límits són equivalents. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. 
+
 \vspace{10mm}
 \hrule\
 \vspace{5mm}
@@ -287,7 +304,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 8}
-\noindent ahajaklsl
+\noindent Un rellotge solar ens marca l'hora solar aparent, mentre que els rellotges convencionals ens marquen l'hora solar mitjana. La diferència entre ambdós tipus de rellotges és la quantitat anomenada "equació del temps" i està directament relacionada amb l'analema solar. Per mantenir el rellotge solar sincronitzat amb el temps solar mitjà, l'analema es pot utilitzar per corregir les fluctuacions causades per l'òrbita i la inclinació de la Terra. El patró de l'analema mostra on estaria el Sol a una hora específica de cada dia en comparació amb el temps solar mitjà.
+
+\vspace{2mm}
+
+\noindent En la pràctica, un rellotge solar pot tenir una escala o factor de correcció inscrit en ell, que ajusta la lectura segons la data. Per exemple, en certs dies, el rellotge solar podria mostrar una hora que estigui uns minuts avançada o endarrerida respecte al temps solar mitjà. En consultar l'analema (o una taula de l'Ecuació del Temps), es pot ajustar l'hora mostrada pel rellotge solar per fer que coincideixi amb el temps solar mitjà. Un exemple de rellotge solar amb correcció és el que es troba en la paret de la facultat de ciències de l'UAB. 
 \vspace{10mm}
 \hrule\
 \vspace{5mm}
@@ -296,7 +317,34 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 9}
-\noindent ahajaklsl
+
+\noindent Finalment, per aquest últim apartat, s'intentarà observar la influència directa de l'inclinació de l'eix de rotació i l'excentricitat a l'hora de generar un analema. Per realitzar aquest anàlisi s'han proposat diversos planetes i s'ens demana de plotejar l'analema solar per cadascún d'ells. Les dades dels planetes es poden trobar en la taula \ref{tab:planetes}.
+
+\vspace{2mm}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Planeta & Inclinació [$\degree$] & Excentricitat $\epsilon$ \\
+        \hline
+        Mercuri & 0.03 & 0.20563069 \\
+        Terra & 23.44 & 0.01671022 \\
+        Mart & 25.19 & 0.09341233 \\
+        Júpiter & 3.12 & 0.04839266 \\
+        Saturn & 26.73 & 0.05415060 \\
+        \hline
+    \end{tabular}
+    \caption{Dades dels planetes. Font: Wikipedia \cite{PLANETES}.}
+    \label{tab:planetes}
+\end{table}
+\vspace{2mm}
+
+\noindent Per realitzar una bona comparativa, s'han generat els analemes per cada planeta i s'han comparat amb el generat pel script de l'Stellarium \cite{SCRIPT_STELLARIUM}. A l'annex es poden trobar les gràfiques generades per cada planeta comparades amb el generat per l'Stellarium. Per realitzar aquest apartat s'ha escrit un nou script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu $analema_planetes.py$. El codi et calcula la declinació del sol a cada planeta, et calcula la diferència entre el temps solar mitjà i el temps solar aparent a partir d'una versió de l'equació del temps diferent a la de l'exercici 6 i, finalment, et grafica l'analema solar vist des de cadascún dels planetes. L'equació del temps utilitzada en aquest apartat és $EoT = M - ra$ (On $ra$ és l'ascensió recta del sol i $M$ és l'anomalia mitjana) i, ara, $M$ i $ra$ es troben emprant l'expressió exacta de l'exercici 4 truncada a 20 termes de la sèrie de Bessel. A més, s'ha obtingut la declinació i no s'ha emprat la llibreria ephem, ja que la llibreria et troba la declinació del sol vist des de la Terra.
+
+\vspace{2mm}
+
+\noindent 
+
 \vspace{10mm}
 \hrule\
 \vspace{5mm}
@@ -304,37 +352,79 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section*{EXERCICI 10}
-\noindent ahajaklsl
-\vspace{10mm}
-\hrule\
-\vspace{5mm}
+\newpage
+\section*{ANNEX}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.52\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Mercuri.png}
+        \caption{Analema solar de Mercuri per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Terra_stellarium.png}
+        \caption{Analema solar de Mercuri en l'Stellarium. Font: Alexander Wolf \cite{SCRIPT_STELLARIUM}.}
+    \end{subfigure}
+    \begin{subfigure}{0.52\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Terra.png}
+        \caption{Analema solar de la Terra per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Terra_stellarium.png}
+        \caption{Analema solar de la Terra en l'Stellarium. Font: Alexander Wolf \cite{SCRIPT_STELLARIUM}.}
+    \end{subfigure}
+\end{figure}
 
+    \newpage
 
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.52\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Mart.png}
+        \caption{Analema solar de Mart per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Terra_stellarium.png}
+        \caption{Analema solar de Mart en l'Stellarium. Font: Alexander Wolf \cite{SCRIPT_STELLARIUM}.}
+    \end{subfigure}
+    \begin{subfigure}{0.52\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Júpiter.png}
+        \caption{Analema solar de Júpiter per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Terra_stellarium.png}
+        \caption{Analema solar de Júpiter en l'Stellarium. Font: Alexander Wolf \cite{SCRIPT_STELLARIUM}.}
+    \end{subfigure}
+\end{figure}
 
+    \newpage
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.52\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Saturn.png}
+        \caption{Analema solar de Saturn per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Terra_stellarium.png}
+        \caption{Analema solar de Saturn en l'Stellarium. Font: Alexander Wolf \cite{SCRIPT_STELLARIUM}.}
+    \end{subfigure}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

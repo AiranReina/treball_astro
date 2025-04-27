@@ -60,14 +60,14 @@ time_dif = []
 
 for d in range(len(days)):
     D_aux.append(163.3155293 + 0.01720197 * d)
-    time_dif.append(( -7.659 * np.sin(D_aux[-1]) + 9.863 * np.sin(2 * D_aux[-1] + 3.5932) ))
+    time_dif.append(( -7.659 * np.sin(D_aux[-1]) + 9.863 * np.sin(2 * D_aux[-1] + 3.5932) ) * 360 / (24*60))
 
 
 #Dibuixem l'analema del Sol dec(\Delta t) a l'any 2025. 
 plt.style.use('classic')
 plt.figure(figsize=(8,8), facecolor='white')
-plt.plot(time_dif, dec_hours, label=r"dec(\Delta t)", color='r')
-plt.xlabel(r"$T_{aparent} - T_{mitjà}$ [$\degree$]")
+plt.plot(time_dif, dec_hours, label= r"$dec(\Delta t)$", color='r')
+plt.xlabel( r"$T_{aparent} - T_{mitjà}$ [$\degree$]")
 plt.ylabel("$Declinatció$ [$h$]")
 plt.title("Analema del Sol (2025)")
 ax = plt.gca()
@@ -76,14 +76,15 @@ ax.axvline(x=0, color='black', linewidth=1)
 for spine in ax.spines.values():
     spine.set_visible(True)
 plt.grid(True)
+plt.legend()
 plt.savefig("informe/images/analema_dec.png", dpi=300, bbox_inches='tight')
 plt.show()
 
 #Dibuixem l'analema del Sol alt(\Delta t) a Bellaterra per a l'any 2025. 
 plt.style.use('classic')
 plt.figure(figsize=(8,8), facecolor='white')
-plt.plot(time_dif, alt_deg, label=r"alt(\Delta t)", color='r')
-plt.xlabel(r"$T_{aparent} - T_{mitjà}$ [$\degree$]")
+plt.plot(time_dif, alt_deg, label=r"$alt(\Delta t)$", color='r')
+plt.xlabel( r"$T_{aparent} - T_{mitjà}$ [$\degree$]")
 plt.ylabel("$Elevació$ [$\degree$]")
 plt.title("Analema del Sol en Bellaterra (2025)")
 ax = plt.gca()
@@ -92,5 +93,6 @@ ax.axvline(x=0, color='black', linewidth=1)
 for spine in ax.spines.values():
     spine.set_visible(True)
 plt.grid(True)
+plt.legend()
 plt.savefig("informe/images/analema_alt.png", dpi=300, bbox_inches='tight')
 plt.show()
