@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"] 1746009099.29171 "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe" 1746009666.20974 0
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" 1746009665.48239 109317 b2b5b7d510e3f14716a7e5a7acd11812 ""
+["biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"] 1746009099.29171 "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe" 1746014679.29981 0
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" 1746014678.99075 109317 b2b5b7d510e3f14716a7e5a7acd11812 ""
   "bib.bib" 1746008604.45183 1970 3c19761a745af5e22ffc1017368301d8 ""
   (generated)
   "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl"
   "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.blg"
   (rewritten before read)
-["biber build/informe"] 1746009091.99353 "build/informe.bcf" "build/informe.bbl" "build/informe" 1746009666.20546 0
+["biber build/informe"] 1746009091.99353 "build/informe.bcf" "build/informe.bbl" "build/informe" 1746014679.29847 0
   "bib.bib" 1746008604.45183 1970 3c19761a745af5e22ffc1017368301d8 ""
-  "build/informe.bcf" 1746009665.48239 109317 b2b5b7d510e3f14716a7e5a7acd11812 "pdflatex"
+  "build/informe.bcf" 1746014678.99075 109317 b2b5b7d510e3f14716a7e5a7acd11812 "pdflatex"
   (generated)
   "build/informe.bbl"
   "build/informe.blg"
   (rewritten before read)
-["pdflatex"] 1746009655.56969 "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" "build/informe.pdf" "informe" 1746009666.21341 0
+["pdflatex"] 1746014674.16521 "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" "build/informe.pdf" "informe" 1746014679.30102 0
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745320845.48625 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1745569660.63614 12668 362fcdff1057ca5ca1f5529c68238b75 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk" 1745501289.8507 15464 432c85c2f2690b3b3a32b3c28ce02c06 ""
@@ -155,14 +155,14 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1730400552 10214 61188260d324e94bc2f66825d7d3fdf4 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.aux" 1746009665.46839 5144 5bcf7f1938995e18d952d8610ff13a38 ""
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.aux" 1746014678.98549 5144 5bcf7f1938995e18d952d8610ff13a38 ""
   "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" 1746009105.76857 13612 67048f7e27c336dfdffb95a6dbaf20c5 "biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.out" 1746009658.17966 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "build/informe.aux" 1746009665.46839 5144 5bcf7f1938995e18d952d8610ff13a38 "pdflatex"
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.out" 1746014675.76721 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "build/informe.aux" 1746014678.98549 5144 5bcf7f1938995e18d952d8610ff13a38 "pdflatex"
   "build/informe.bbl" 1746009105.76857 13612 67048f7e27c336dfdffb95a6dbaf20c5 "biber build/informe"
-  "build/informe.out" 1746009658.17966 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "build/informe.run.xml" 1746009665.48743 2360 4c26a45d7cdd3d1cf623487293ddf3f3 "pdflatex"
-  "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" 1746009653.88047 29353 c3fdcdfbb7e8856929d6d14dbb4d7048 ""
+  "build/informe.out" 1746014675.76721 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "build/informe.run.xml" 1746014678.99289 2360 4c26a45d7cdd3d1cf623487293ddf3f3 "pdflatex"
+  "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" 1746014667.71793 30821 e69ac72e6396cbce382abc4ffddc7765 ""
   "images/Logo_uab.png" 1745321769.59889 137357 901e0a379faa11529a5403fed03c5ce3 ""
   "images/analema.png" 1745326468.21555 34220 11dc368e0c31f320e30fa9ba6cb51f12 ""
   "images/analema_Júpiter.png" 1746008237.58463 195922 ff23f5bd546c5ea903f1340ca930d748 ""

@@ -129,7 +129,7 @@
     \label{fig:esquema_orbites}
 \end{figure}
 
-\noindent Per definició d'$E$, $cos(E) = \frac{x}{a}$. Sabem també que l'equació de la elipse és $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ i, com que el primer terme és $cos^2(E)$, el segón ha de ser $sin^2(E)$ per cumplir l'igualtat trigonomètrica. Aquestes dos relacions amb la definició d'excentricitat $\epsilon$ ens donen 3 relacions importants:
+\noindent Per definició d'$E$, $cos(E) = \frac{x}{a}$. Sabem també que l'equació de la elipse és $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ i, com que el primer terme és $cos^2(E)$, el segón ha de ser $sin^2(E)$ per cumplir l'igualtat trigonomètrica $sin^2(x) + cos^2(x) = 1$. Aquestes dos relacions amb la definició d'excentricitat $\epsilon$ ens donen 3 relacions importants:
 
 \begin{equation} \label{relacions_Eie}
     \boxed{\cos(E) = \cfrac{x}{a}} \hspace{5mm} \boxed{\sin(E) = \cfrac{y}{b}} \hspace{5mm} \boxed{\epsilon \equiv \sqrt{1-\cfrac{b^2}{a^2}}}
@@ -146,7 +146,7 @@
     &= a^2 [1 - 2\epsilon cos(E) + \epsilon^2 cos^2(E)] = a^2[1-\epsilon cos(E)]^2
 \end{align*}
 
-\noindent Tenint doncs una expressió per $r$, seguim amb el càlcul que estàvem fent abans i, després, per trobar una expressió $sin(E)$ en funció de $\nu$, apliquem la identitat trigonomètrica:
+\noindent Tenint doncs una expressió per $r$, seguim amb el càlcul que estàvem fent abans i, després, per trobar una expressió $sin(E)$ en funció de $\nu$, apliquem la identitat trigonomètrica $sin^2(x) + cos^2(x) = 1$:
 
 \begin{align*}
     &cos(E) = \cfrac{\epsilon a + [a(1-\epsilon cos(E))] cos(\nu)}{a} = \epsilon + cos(\nu) - \epsilon cos(E) cos(\nu)\\
@@ -158,7 +158,7 @@
 \end{align*}
 \vspace{2mm}
 \begin{equation} \label{relacions_Enu}
-    \implies \hspace{5mm} \boxed{cos(E) = \cfrac{\epsilon + cos(\nu)}{1 + \epsilon cos(\nu)}} \hspace{5mm} \boxed{sin(E) = \cfrac{\sqrt{1-\epsilon^2} sin(\nu)}{1 + \epsilon cos(\nu)}}
+    \implies \hspace{5mm} \boxed{cos(E) = \cfrac{\epsilon + cos(\nu)}{1 + \epsilon cos(\nu)}} \hspace{5mm} \boxed{sin(E) = \cfrac{\sqrt{1-\epsilon^2}sin(\nu)}{1 + \epsilon cos(\nu)}}
 \end{equation}
 \vspace{2mm}
 
@@ -175,10 +175,10 @@
 
 \begin{align*}
     &KT = \pi a^2 \sqrt{1-\epsilon^2} \hspace{2mm} \implies \hspace{2mm} K = \cfrac{\pi a^2}{T} \sqrt{1-\epsilon^2} \\
-    &Kt = \cfrac{\pi a^2}{T} \sqrt{1-\epsilon^2} t = \cfrac{a^2}{2} \sqrt{1-\epsilon^2} [E - \epsilon sin(E)] \hspace{2mm} \implies \hspace{2mm} \cfrac{2\pi t}{T} = E - \epsilon sin(E) \\
+    &Kt = \cfrac{\pi a^2}{T} \sqrt{1-\epsilon^2} t = A_{real} = \cfrac{a^2}{2} \sqrt{1-\epsilon^2} [E - \epsilon sin(E)] \hspace{2mm} \implies \hspace{2mm} \cfrac{2\pi t}{T} = E - \epsilon sin(E) \\
 \end{align*}
 
-\noindent Com sabem, $M$ és la posició hipotètica en l'órbita circular. Com l'órbita és circular, per la primera llei de Kepler sabem que el Sol s'ha de trobar al centre i, per tant, la velocitat angular és constant. Per aquesta raó, podem definir $M$ com l'angle escombrat en el temps $t$, és a dir, $M \equiv 2\pi \cfrac{t}{T}$, per tant:
+\noindent Com sabem, $M$ és la posició hipotètica en l'órbita circular. Com l'órbita és circular, per la primera llei de Kepler sabem que el Sol s'hauría de trobar al centre i, per tant, la velocitat angular és constant. Per aquesta raó, podem definir $M$ com l'angle escombrat en el temps $t$, és a dir, $M \equiv 2\pi \cfrac{t}{T}$, per tant:
 
 \begin{equation} \label{relacio_ME}
     \boxed{M(E) = E - \epsilon sin(E)}
@@ -193,7 +193,7 @@
 \end{equation}
 \vspace{2mm}
 
-\noindent Com es pot observar, trobar la relació inversa $\nu(M)$ es complica bastant. En el moviment Keplerià, les coordenades del cos celeste es repeteixen de manera periòdica en cada òrbita, fet que permet descriure-les mitjançant sèries periòdiques en funció de variables angulars creixents. L’anomalia mitjana $M$, que creix linealment amb el temps, és especialment útil perquè permet expressar altres variables orbitals en funció del temps. L’anomalia veritable $\nu$, tot i ser analítica respecte de $M$, no és una funció entera i té un radi de convergència limitat si s’expressa com a sèrie de potències. Tanmateix, com a funció periòdica, es pot representar per una sèrie de Fourier que convergeix globalment. Els coeficients d’aquesta sèrie depenen d'$\epsilon$ i s’expressen mitjançant funcions de Bessel del primer tipus. De forma genèrica, la serie que aproxima la funció $\nu(M)$ és:
+\noindent Com es pot observar, trobar la relació inversa $\nu(M)$ es complica bastant. En el moviment Keplerià, les coordenades del cos celeste es repeteixen de manera periòdica en cada òrbita, fet que permet descriure-les mitjançant sèries periòdiques en funció de variables angulars creixents. L’anomalia mitjana $M$, que creix linealment amb el temps, és especialment útil perquè permet expressar altres variables orbitals en funció del temps. L’anomalia veritable $\nu$, tot i ser analítica respecte de $M$, no és una funció entera i té un radi de convergència limitat si s’expressa com a sèrie de potències. Tanmateix, pel fet de ser una funció periòdica, es pot expandir en una sèrie de Fourier que convergeix globalment. Els coeficients d’aquesta sèrie depenen d'$\epsilon$ i s’expressen mitjançant funcions de Bessel del primer tipus. De forma genèrica, la serie que aproxima la funció $\nu(M)$ és:
 
 \begin{equation*}
     \nu(M) = M + 2\sum_{s=1}^{\infty} \cfrac{1}{s} \left[ J_s(s\epsilon) + \sum_{p=1}^{\infty} e^{-p}[1-\sqrt{1-\epsilon^2}]^p[J_{s-p}(s\epsilon) - J_{s+p}(s\epsilon)] \right] sin(sM)
@@ -208,7 +208,7 @@
 \end{equation}\
 \vspace{2mm}
 
-\noindent Ón hem aproximat per sota d'ordre $\epsilon^3$. L'explicació de la versió aproximada de $\nu(M)$ és bastant complexe i requereix matemàtiques extenses y avançades. Com s'ha dit a l'inici d'aquest exercici, s'han emprat diversos recursos com a guía. En específic, per aquesta part final, s'ha emprat la referència \cite{EQ_OF_CENTER} de la Wikipedia. Per trobar una expresió de major ordre, es poden trobar els termes d'ordre superior en la referència esmentada.
+\noindent Ón hem aproximat per sota d'ordre $\epsilon^3$. La demostració explícita de la versió aproximada de $\nu(M)$ és bastant complexe i requereix matemàtiques extenses y avançades. Com s'ha dit a l'inici d'aquest exercici, s'han emprat diversos recursos com a guía. En específic, per aquesta part final, s'ha emprat la referència \cite{EQ_OF_CENTER} de la Wikipedia. Per trobar una expresió de major ordre, es poden trobar els termes d'ordre superior en la referència esmentada.
 
 \vspace{2mm}
 
@@ -226,7 +226,7 @@
 
 \vspace{2mm}
 
-\noindent L’equació del temps presenta dues oscil·lacions amb forma d’ona sinusoïdal perquè hi ha dues causes físiques independents que afecten el moviment aparent del Sol respecte al temps solar mitjà. La primera és l’excentricitat de l’òrbita terrestre: com que l’òrbita de la Terra és el·líptica, la seva velocitat orbital varia al llarg de l’any. Aquesta variació provoca una desviació periòdica en la posició del Sol aparent, amb una ona sinusoïdal de període anual. La segona causa és la inclinació de l’eix de rotació de la Terra respecte al pla de la seva òrbita (la eclíptica). Aquest angle d’uns $\sim 23.5\degree$ fa que el moviment aparent del Sol al llarg de l’equador celeste no sigui uniforme, i això introdueix una segona variació també de tipus sinusoïdal, però amb el doble de freqüència angular. El efecte de la doble freqüència prové de que, en projectar el sol sobre el pla eclíptic celeste, ens dona una expresió de la forma $tan(\alpha) = cos(\sim 23.5 \degree) tan(\lambda)$, on $\alpha$ és l'ascensió recta i $\lambda$ és la longitud eclíptica. Quan expandim la funció $\alpha(\lambda)$ en aquesta expressió, trobem que s'aproxima a una serie de Fourier truncada de forma que queda $\alpha(\lambda) = \lambda - Csin(2\lambda) + ...$, ón $A$ és una constant.
+\noindent L’equació del temps presenta dues oscil·lacions amb forma d’ona sinusoïdal perquè hi ha dues causes físiques independents que afecten el moviment aparent del Sol respecte al temps solar mitjà. La primera és l’excentricitat de l’òrbita terrestre: com que l’òrbita de la Terra és el·líptica, la seva velocitat orbital varia al llarg de l’any. Aquesta variació provoca una desviació periòdica en la posició del Sol aparent, amb una ona sinusoïdal de període anual. La segona causa és la inclinació de l’eix de rotació de la Terra respecte al pla de la seva òrbita (la eclíptica). Aquest angle d’uns $\sim 23.5\degree$ fa que el moviment aparent del Sol al llarg de l’equador celeste no sigui uniforme, i això introdueix una segona variació també de tipus sinusoïdal, però amb el doble de freqüència angular. El efecte de la doble freqüència prové de que, en projectar el sol sobre el pla eclíptic celeste, ens dona una expresió de la forma $tan(\alpha) = cos(\sim 23.5 \degree) tan(\lambda)$, on $\alpha$ és l'ascensió recta i $\lambda$ és la longitud eclíptica. Quan expandim la funció $\alpha(\lambda)$ en aquesta expressió, trobem que s'aproxima a una serie de Fourier truncada de forma que queda $\alpha(\lambda) = \lambda - Csin(2\lambda) + ...$, ón $C$ és una constant.
 
 \vspace{2mm}
 
@@ -268,11 +268,11 @@
 \end{figure}
 \vspace{2mm}
 
-\noindent Com es pot observar, l'analema solar pateix una petita inlinació. Un analema es veu perfectament verticual quan s'observa des de l'equador a longituds específiques on el migdia solar mitjà coincideix amb el migdia solar aparent. Quan es varia la latitud respecte a l'equador, l'analema es va inlinant lleugerament degut a la inclinació de l'eix terrestre i l'excentricitat de l'òrbita de la Terra.
+\noindent Com es pot observar, l'analema solar pateix una petita inlinació. Un analema es veu perfectament vertical quan s'observa des de l'equador a longituds específiques on el migdia solar mitjà coincideix amb el migdia solar aparent. Quan es varia la latitud respecte a l'equador, l'analema es va inlinant lleugerament degut a la inclinació de l'eix terrestre i l'excentricitat de l'òrbita de la Terra.
 
 \vspace{2mm}
 
-\noindent Finalment, és interessant analitzar l'analema que es troba en la paret de la facultat de ciències de l'UAB (La imatge es troba en l'anunciat, que es pot trobar en el Github del treball). La figura mostra un conjunt d'analemas observats des de Bellaterra per diferents hores del día. Els analemmes tenen un loop més gros (Decembre-Gener) i un més prim (Juny-Juliol). Els analemes es mostren inclinats com es pot esperar a una latitud com Bellaterra. A priori, sembla que els analemes estan representats de forma correcta, tot i que no es pot assegurar amb exactitud degut a que faria falta un estudi més exhaustiu.
+\noindent Finalment, és interessant analitzar l'analema que es troba en la paret de la facultat de ciències de l'UAB (La imatge es troba en l'anunciat, que es pot trobar en el Github del treball). La figura mostra un conjunt d'analemes observats des de Bellaterra per diferents hores del día. Els analemes tenen un loop més gros (Decembre-Gener) i un més prim (Juny-Juliol). Els analemes es mostren inclinats com es pot esperar a una latitud com Bellaterra. A priori, sembla que els analemes estan representats de forma correcta, tot i que no es pot assegurar amb exactitud degut a que faria falta un estudi més exhaustiu. El fet d'observar diversos analemes prové del fet que, realment, l'observat en la imatge és la correcció del rellotge solar degut a la variació de la posició del sol en la bòveda celeste a una mateixa hora al llarg de l'any. L'explicació exhaustiva d'aquest fenòmen es troba explicitada en l'exercici 8.
 
 \vspace{10mm}
 \hrule\
@@ -288,13 +288,13 @@
 \vspace{2mm}
 \begin{figure} [h!]
     \centering
-    \includegraphics[width=0.40\textwidth]{images/analema_real.png}
+    \includegraphics[width=0.37\textwidth]{images/analema_real.png}
     \caption{Analema solar generat per l'script de l'Stellarium. Font: Alexander Wolf.}
     \label{fig:analema_real}
 \end{figure}
 \vspace{2mm}
 
-\noindent Com es pot veure si es compara amb la figura \ref{fig:analema_alt}, ambdós analemas són, en esència, el mateix. Els dos es troben inclinats lleugerament cap a l'esquerra i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud per sobre dels $70 \degree$ i un mínim d'altitud per sota dels $30 \degree$. També, es pot observar que el analema de l'Stellarium està limitat en un azimut de $[175\degree ,185\degree]$ i, el generat propi, està limitat a $5 \degree$ per banda al voltant del meridià ón està centrar; ambdós límits són equivalents. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. 
+\noindent Com es pot veure si es compara amb la figura \ref{fig:analema_alt}, ambdós analemas són, en esència, el mateix. Els dos es troben inclinats lleugerament cap a l'esquerra i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud per sobre dels $70 \degree$ i un mínim d'altitud per sota dels $30 \degree$. També, es pot observar que el analema de l'Stellarium està limitat en un azimut de $[175\degree ,185\degree]$ i, el generat propi, està limitat a $5 \degree$ per banda al voltant del meridià ón està centrat; ambdós límits són equivalents. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. 
 
 \vspace{10mm}
 \hrule\
@@ -304,11 +304,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{EXERCICI 8}
-\noindent Un rellotge solar ens marca l'hora solar aparent, mentre que els rellotges convencionals ens marquen l'hora solar mitjana. La diferència entre ambdós tipus de rellotges és la quantitat anomenada "equació del temps" i està directament relacionada amb l'analema solar. Per mantenir el rellotge solar sincronitzat amb el temps solar mitjà, l'analema es pot utilitzar per corregir les fluctuacions causades per l'òrbita i la inclinació de la Terra. El patró de l'analema mostra on estaria el Sol a una hora específica de cada dia en comparació amb el temps solar mitjà.
+\noindent Un rellotge solar ens marca l'hora solar aparent, mentre que els rellotges convencionals ens marquen l'hora solar mitjana. La diferència entre ambdós tipus de rellotges és la quantitat anomenada 'equació del temps' i està directament relacionada amb l'analema solar. Per mantenir el rellotge solar sincronitzat amb el temps solar mitjà, l'analema es pot utilitzar per corregir les fluctuacions causades per l'òrbita i la inclinació de la Terra. El patró de l'analema mostra on estaria el Sol a una hora específica de cada dia en comparació amb el temps solar mitjà.
 
 \vspace{2mm}
 
-\noindent En la pràctica, un rellotge solar pot tenir una escala o factor de correcció inscrit en ell, que ajusta la lectura segons la data. Per exemple, en certs dies, el rellotge solar podria mostrar una hora que estigui uns minuts avançada o endarrerida respecte al temps solar mitjà. En consultar l'analema (o una taula de l'Ecuació del Temps), es pot ajustar l'hora mostrada pel rellotge solar per fer que coincideixi amb el temps solar mitjà. Un exemple de rellotge solar amb correcció és el que es troba en la paret de la facultat de ciències de l'UAB. 
+\noindent A la pràctica, un rellotge solar pot tenir una escala o factor de correcció inscrit en ell, que ajusta la lectura segons la data. Per exemple, en certs dies, el rellotge solar podria mostrar una hora que estigui uns minuts avançada o endarrerida respecte al temps solar mitjà. En consultar l'analema (o una taula de l'Ecuació del Temps), es pot ajustar l'hora mostrada pel rellotge solar per fer que coincideixi amb el temps solar mitjà. Un exemple de rellotge solar amb correcció és el que es troba en la paret de la facultat de ciències de l'UAB. 
 \vspace{10mm}
 \hrule\
 \vspace{5mm}
@@ -325,7 +325,7 @@
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        Planeta & Inclinació [$\degree$] & Excentricitat $\epsilon$ \\
+        Planeta & Obliqüitat [$\degree$] & Excentricitat $\epsilon$ \\
         \hline
         Mercuri & 0.03 & 0.21 \\
         Terra & 23.44 & 0.0167 \\
@@ -343,11 +343,11 @@
 
 \vspace{2mm}
 
-\noindent Les órbites escullides són interessants doncs mostren una gran variació en l'excentricitat i l'inclinació i, per tant, el gran rang d'aspectes que es poden observar en un analema. ........
+\noindent Les órbites escullides són interessants doncs mostren una gran variació en l'excentricitat i l'inclinació i, per tant, el gran rang d'aspectes que es poden observar en un analema. Tenim 2 grans grups d'analemes segons la seva forma: analemes en forma de vuit (A la Terra, Mart o Saturn) i en forma elíptica (A Mercuri o Júpiter). Els planetes amb l'analema en forma de vuit tenen en comú una obliquitat alta ($\sim 25\degree$), mentre que els que tenen forma elíptica tenen una obliquitat molt baixa ($\sim 1\degree$). Amb aquesta observació es pot intuir la relació directa entre l'obliqüitat i l'accentuació del loop de l'analema. Com a exeple extrem, es pot observar Urà, que té una obliqüitat de $97.86 \degree$ i, si s'observa el seu analema, fa una forma de vuit extremadament accentuada. 
 
 \vspace{2mm}
 
-\noindent Per completitud, es finalitzarà aquest apartat amb el següent: Primer de tot, s'ha generat i analitzat un analema solar i, després, s'ha generalitzat el concepte d'analema a altres planetes (Doncs aquests també orbiten al voltant del sol). Finalment, es pot generalitzar el concepte d'analema a qualsevol cos celeste que orbiti al voltant d'un altre cos celeste. Com a exemple, es pot analitzar l'analema lunar, és a dir, l'analema de la luna vist des de la Terra. L'excentricitat de l'órbita Terra-Lluna és $\epsilon \approx 0.0549$ i, l'oblicuitat de l'órbita $\sim 6.68 \degree$ \cite{LLUNA}. La forma de l'analema lunar es pot trobar en la figura \ref{fig:analema_luna}.
+\noindent Per completitud, es finalitzarà aquest apartat amb el següent: Primer de tot, s'ha generat i analitzat un analema solar i, després, s'ha generalitzat el concepte d'analema a altres planetes (Doncs aquests també orbiten al voltant del sol); Finalment, es pot generalitzar el concepte d'analema a qualsevol cos celeste que orbiti al voltant d'un altre cos celeste. Com a exemple, es pot analitzar l'analema lunar, és a dir, l'analema de la luna vist des de la Terra. L'excentricitat de l'órbita Terra-Lluna és $\epsilon \approx 0.0549$ i, l'obliqüitat de l'órbita $\sim 6.68 \degree$ \cite{LLUNA}. La forma de l'analema lunar es pot trobar en la figura \ref{fig:analema_luna}.
 
 \begin{figure}[h!]
     \centering
@@ -358,12 +358,12 @@
 
 \vspace{2mm}
 
-\noindent Com es pot observar, la figura és la que es troba a l'anunciat de l'entrega. La imatge 'Lunar Analemma' és una composició fotogràfica que mostra el moviment de la Lluna sobre el Teatre-Museu Dalí de Figueres, Espanya, al llarg d'un mes lunar. Aquesta tècnica és similar a l'analema solar, però en aquest cas es realitza en un període de temps molt més curt (degut al fet que el període lunar és d'uns 27 dies, mentre que el solar és d'uns 365, aproximadament).
+\noindent Com es pot observar, la figura és la que es troba a l'anunciat de l'entrega. La imatge 'Lunar Analemma' és una composició fotogràfica que mostra el moviment de la Lluna sobre el Teatre-Museu Dalí de Figueres, Espanya, al llarg d'un mes lunar. Aquesta tècnica és similar a l'analema solar, però en aquest cas es realitza en un període de temps molt més curt (degut al fet que el període lunar és d'uns 27 dies, mentre que el solar és d'uns 365, aproximadament). Com es pot observar, la figura és coherent amb els analemes graficats anteriorment. L'órbita de la lluna té propietats similars a les de Júpiter, per tant, s'observa una figura allargada i inclinada també. A diferència de l'analema de Júpiter, aquesta té forma de vuit, però és probable doncs l'analema de Júpiter està bastant allargat i aprimat, per tant, pot ser que estigui a prop d'una obliqüitat que permet la formació del loop.
 
 
-\vspace{10mm}
-\hrule\
-\vspace{5mm}
+%\vspace{10mm}
+%\hrule\
+%\vspace{5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
