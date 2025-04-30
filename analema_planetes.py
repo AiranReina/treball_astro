@@ -12,7 +12,7 @@ planets = {
     'Terra': {'e': 0.0167, 'varpi_deg': 102.937348 + 180, 'eps_deg': 23.44, 'tau': 1.07},
     'Mart': {'e': 0.0934, 'varpi_deg': 336.04084 + 180, 'eps_deg': 25.19, 'tau': 16.5},
     'Júpiter': {'e': 0.0484, 'varpi_deg': 14.75385 + 180, 'eps_deg': 3.12, 'tau': 14.0},
-    'Saturn': {'e': 0.0542, 'varpi_deg': 92.43194 + 180, 'eps_deg': 26.73, 'tau': 27.0},
+    'Saturn': {'e': 0.0542, 'varpi_deg': 92.43194 + 180, 'eps_deg': 26.73, 'tau': 27.0}
 }
 
 #Trobem els valors de la declinació i \Delta t (Amb la EoT) per cada planeta ...

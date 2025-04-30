@@ -273,6 +273,70 @@
       \verb https://analemma.com/other-analemmas.html
       \endverb
     \endentry
+    \entry{LLUNA}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={NASA},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Moon Fact Sheet}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html
+      \endverb
+      \verb{url}
+      \verb https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html
+      \endverb
+    \endentry
+    \entry{ANALEMA_MOON}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=244331c98367af2d59ed28638f5c0e4b}{%
+           family={Casado},
+           familyi={C\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{244331c98367af2d59ed28638f5c0e4b}
+      \strng{fullhash}{244331c98367af2d59ed28638f5c0e4b}
+      \strng{fullhashraw}{244331c98367af2d59ed28638f5c0e4b}
+      \strng{bibnamehash}{244331c98367af2d59ed28638f5c0e4b}
+      \strng{authorbibnamehash}{244331c98367af2d59ed28638f5c0e4b}
+      \strng{authornamehash}{244331c98367af2d59ed28638f5c0e4b}
+      \strng{authorfullhash}{244331c98367af2d59ed28638f5c0e4b}
+      \strng{authorfullhashraw}{244331c98367af2d59ed28638f5c0e4b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lunar Analemma}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://twanight.org/gallery/lunar-analemma-composite/
+      \endverb
+      \verb{url}
+      \verb https://twanight.org/gallery/lunar-analemma-composite/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
