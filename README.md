@@ -1,6 +1,6 @@
 # LLEGIR PER ENTENDRE EL GITHUB
 
-Aquest Github consta de 3 parts principals. Primer de tot, trobem els codis que grafiquen analemes; després, en la carpeta informe/ es poden trobar les imatges generades i emprades en l'informe i, en la carpeta build/, arxius necesàris per poder generar un document LaTeX com és l'informe.
+Aquest Github consta de 3 parts principals. Primer de tot, trobem els codis que grafiquen analemes; després, en la carpeta informe/ es poden trobar les imatges generades i emprades en l'informe (En la carpeta images/) i, en la carpeta build/, arxius necesàris per poder generar un document LaTeX com és l'informe.
 
 # ARXIUS IMPORTANTS:
 
