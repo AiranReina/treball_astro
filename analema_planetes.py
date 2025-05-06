@@ -1,72 +1,100 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.colors as colors
 from scipy.special import jn
 
-#Paràmetres necessaris
-N_terms = 20
-days = np.linspace(0, 365.25, 1000)
-
-#Inicialitzem els paràmetres dels planetes
-planets = {
-    'Mercuri': {'e': 0.2056, 'varpi_deg': 77.456 + 180, 'eps_deg': 0.03, 'tau': 0.0},
-    'Terra': {'e': 0.0167, 'varpi_deg': 102.937348 + 180, 'eps_deg': 23.44, 'tau': 1.07},
-    'Mart': {'e': 0.0934, 'varpi_deg': 336.04084 + 180, 'eps_deg': 25.19, 'tau': 16.5},
-    'Júpiter': {'e': 0.0484, 'varpi_deg': 14.75385 + 180, 'eps_deg': 3.12, 'tau': 14.0},
-    'Saturn': {'e': 0.0542, 'varpi_deg': 92.43194 + 180, 'eps_deg': 26.73, 'tau': 27.0}
+# Inicialitzem els paràmetres órbitals dels planetes
+planets_test = {
+    'Earth': {
+        'e': 0.0167,
+        'varpi_deg': 102.937348 + 180,
+        'eps_deg': 23.44
+    },
+    'Mercury': {
+        'e': 0.2056,
+        'varpi_deg': 77.456 + 180,
+        'eps_deg': 0.03
+    },
+    'Mars': {
+        'e': 0.0934,
+        'varpi_deg': 336.04084 + 180,
+        'eps_deg': 25.19
+    },
+    'Jupiter': {
+        'e': 0.0489,
+        'varpi_deg': 14.75385 + 180,
+        'eps_deg': 3.13
+    },
+    'Saturn': {
+        'e': 0.0565,
+        'varpi_deg': 92.43194 + 180,
+        'eps_deg': 26.73
+    }
 }
 
-#Trobem els valors de la declinació i \Delta t (Amb la EoT) per cada planeta ...
-#... i després grafiquem l'analema solar allà.
-for planet, params in planets.items():
-    e_planet = params['e']
-    varpi_planet = np.radians(params['varpi_deg'])
-    eps_planet = np.radians(params['eps_deg'])
-    tau_planet = params['tau']
 
-    #Computem la anomalia mitjana del planeta
-    M_planet = 2 * np.pi * (days - tau_planet) / 365.25
+# Inicialitzem les constants necesàries pel programa
+T_orbital_earth = 365.25
+tau_test = 1.07
+N_terms = 20
+days_common = np.linspace(0, T_orbital_earth, 1000)
+lat_rad = np.radians(40)
+hora_local_p = 12
 
-    #Computem la anomalia excèntrica del planeta emprant la sèrie de Fourier on ...
-    #... els coeficients són funcions de Bessel. Ara ens trobem en una aproximació ...
-    #... molt més exacta.
-    E_series = M_planet.copy()
+# Grafiquem els analemes per tots els planetes
+plt.style.use('classic')
+percent = np.linspace(0, 100, 1000)
+fig, axes = plt.subplots(1, 5, figsize=(30, 8), sharey=True, facecolor='white')
+eot_dict = {}
+radec_dict = {}
+for i, (planet, params) in enumerate(planets_test.items()):
+    e = params['e']
+    varpi = np.radians(params['varpi_deg'])
+    eps = np.radians(params['eps_deg'])
+
+    M = 2 * np.pi * (days_common - tau_test) / T_orbital_earth
+    E = M.copy()
     for n in range(1, N_terms + 1):
-        E_series += (2 / n) * jn(n, n * e_planet) * np.sin(n * M_planet)
+        E += (2 / n) * jn(n, n * e) * np.sin(n * M)
 
-    #Computem la anomalia veritable a partir de la anomalia excèntrica.
-    nu = np.arctan2(np.sqrt(1 - e_planet**2) * np.sin(E_series), np.cos(E_series) - e_planet)
+    nu = np.arctan2(np.sqrt(1 - e**2) * np.sin(E), np.cos(E) - e)
+    lamb = (nu + varpi) % (2 * np.pi)
 
-    #Trobem la longitud eclíptica i l'ascensió recta del sol per a cada planeta i emprem ...
-    #... els valors per trobar la \Delta t (EoT) i la declinació del sol.
-    lambda_sun = (nu + varpi_planet) % (2 * np.pi)
-    alpha = np.unwrap(np.arctan2(np.cos(eps_planet) * np.sin(lambda_sun), np.cos(lambda_sun)))
+    alpha = np.unwrap(np.arctan2(np.cos(eps) * np.sin(lamb), np.cos(lamb)))
+    delta = np.arcsin(np.sin(eps) * np.sin(lamb))
 
-    EOT_rad = M_planet - alpha
+    alpha_deg = np.degrees(alpha) % 360
+    delta_deg = np.degrees(delta)
+    radec_dict[planet] = (alpha_deg, delta_deg)
+
+    EOT_rad = M - alpha
     EOT_min = EOT_rad * (1440 / (2 * np.pi))
     EOT_min -= np.mean(EOT_min)
+    eot_dict[planet] = EOT_min.copy()
 
-    delta = np.arcsin(np.sin(eps_planet) * np.sin(lambda_sun))
+    H_deg = 15 * (hora_local_p + EOT_min / 60 - 12)
+    H_rad = np.radians(H_deg)
 
-    #Transformem les unitats de la declinació i EoT a graus per graficar-los.
-    x = EOT_min * 360 / (24 * 60)
-    y = np.degrees(delta)
+    elev = np.degrees(np.arcsin(
+        np.sin(lat_rad) * np.sin(delta) +
+        np.cos(lat_rad) * np.cos(delta) * np.cos(H_rad)
+    ))
+    azim = np.degrees(np.arctan2(
+        -np.sin(H_rad),
+        -np.cos(H_rad) * np.sin(lat_rad) + np.tan(delta) * np.cos(lat_rad)
+    )) % 360
 
-    #Grafiquem l'analema solar a cada planeta.
-    plt.style.use('classic')
-    plt.figure(figsize=(8, 10), facecolor='white')
-    plt.plot(x, y, color = 'r', label=f'Analema a {planet}')
-    plt.xlabel(r"$T_{aparent} - T_{mitjà}$ [$\degree$]")
-    plt.ylabel(r"$Declinatció$ [$\degree$]")
-    plt.title(f'Analema solar a {planet} (2025)')
-    ax = plt.gca()
-    ax.axhline(y=0, color='black', linewidth=1)
-    ax.axvline(x=0, color='black', linewidth=1)
-    for spine in ax.spines.values():
-        spine.set_visible(True)
-    plt.grid(True)
-    #plt.text(0.05, 0.95, f'$e = {e_planet:.4f}$\n$\\varepsilon = {np.degrees(eps_planet):.2f}^\\circ$',
-         #transform=plt.gca().transAxes, fontsize=15, verticalalignment='top')
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(f"informe/images/analema_{planet}.png", dpi=300, bbox_inches='tight')
-    plt.show()
+    ax = axes[i]
+    sc = ax.scatter(azim, elev, c=percent, cmap='jet', s=100, edgecolors='none')
+    ax.set_title(planet)
+    ax.set_xlabel(r'Az [$\degree$]')
+    ax.grid(True)
+    if i == 0:
+        ax.set_ylabel(r'Alt [$\degree$]')
+
+fig.suptitle(f"Analema Solar per Planeta a Latitud {np.degrees(lat_rad):.1f}° (Inici: 01/01/2025 a {hora_local_p}h)", fontsize=16)
+cbar = plt.colorbar(sc, label='Percentatge del any')
+cbar.set_ticks([0, 100])
+plt.tight_layout()
+plt.savefig("informe/images/analema_Planetes.png", dpi=300, bbox_inches='tight')
+plt.show()

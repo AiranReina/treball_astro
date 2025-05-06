@@ -29,7 +29,7 @@ for i in range(28):
 # Grafiquem els resultats
 plt.style.use('classic')
 plt.figure(figsize=(8, 8), facecolor='white')
-sc = plt.scatter(azimuths, altitudes, c=range(28), s=100, cmap='jet', label='Analema lunar')
+sc = plt.scatter(azimuths, altitudes, c=range(28), s=100, cmap='jet', label='Analema lunar',edgecolors='none')
 #plt.xlim(0, 360)
 #plt.ylim(0, 90)
 plt.colorbar(sc, label='Día del cicle')
