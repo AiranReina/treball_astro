@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  30 APR 2025 14:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  7 MAY 2025 18:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -856,26 +856,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-<images/analema_alt.png, id=88, 502.5174pt x 527.3301pt>
-File: images/analema_alt.png Graphic file (type png)
-<use images/analema_alt.png>
-Package pdftex.def Info: images/analema_alt.png  used on input line 265.
-(pdftex.def)             Requested size: 249.13371pt x 261.4275pt.
+Overfull \hbox (11.89035pt too wide) in paragraph at lines 270--271
+\OT1/cmr/m/n/10.95 rit-zon-tals $([]\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ) = ([]\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 )$ i en co-or-de-na-des equa-to-ri-als $([]\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ) =
+ []
 
+<images/analema_dec_eot.png, id=87, 557.4426pt x 563.706pt>
+File: images/analema_dec_eot.png Graphic file (type png)
+<use images/analema_dec_eot.png>
+Package pdftex.def Info: images/analema_dec_eot.png  used on input line 277.
+(pdftex.def)             Requested size: 203.83417pt x 206.12514pt.
+<images/analema_alt_az.png, id=88, 556.2381pt x 564.9105pt>
+File: images/analema_alt_az.png Graphic file (type png)
+<use images/analema_alt_az.png>
+Package pdftex.def Info: images/analema_alt_az.png  used on input line 283.
+(pdftex.def)             Requested size: 203.83417pt x 207.00519pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7 <./images/analema_alt.png>]
-<images/analema_real.png, id=99, 429.85594pt x 727.96968pt>
-File: images/analema_real.png Graphic file (type png)
-<use images/analema_real.png>
-Package pdftex.def Info: images/analema_real.png  used on input line 291.
-(pdftex.def)             Requested size: 167.5959pt x 283.82928pt.
 
 
 
@@ -885,7 +882,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8 <./images/analema_real.png (PNG copy)>]
+[7]
+<images/analema_UAB.png, id=98, 498.06075pt x 374.5995pt>
+File: images/analema_UAB.png Graphic file (type png)
+<use images/analema_UAB.png>
+Package pdftex.def Info: images/analema_UAB.png  used on input line 299.
+(pdftex.def)             Requested size: 271.7835pt x 204.42418pt.
+<images/analema_simUAB.png, id=100, 564.6696pt x 564.9105pt>
+File: images/analema_simUAB.png Graphic file (type png)
+<use images/analema_simUAB.png>
+Package pdftex.def Info: images/analema_simUAB.png  used on input line 311.
+(pdftex.def)             Requested size: 190.24568pt x 190.32582pt.
+<images/analema_simUAB_invert.png, id=101, 676.929pt x 564.9105pt>
+File: images/analema_simUAB_invert.png Graphic file (type png)
+<use images/analema_simUAB_invert.png>
+Package pdftex.def Info: images/analema_simUAB_invert.png  used on input line 318.
+(pdftex.def)             Requested size: 217.42265pt x 181.43878pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -894,11 +911,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9]
-<images/analema_luna.jpg, id=118, 289.08pt x 192.72pt>
+[8 <./images/analema_dec_eot.png> <./images/analema_alt_az.png> <./images/analema_UAB.png>]
+
+LaTeX Warning: Reference `fig:analema_real' on page 9 undefined on input line 345.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9 <./images/analema_simUAB.png> <./images/analema_simUAB_invert.png>]
+
+LaTeX Warning: Reference `fig:analema_alt' on page 10 undefined on input line 351.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10]
+<images/analema_luna.jpg, id=132, 289.08pt x 192.72pt>
 File: images/analema_luna.jpg Graphic file (type jpg)
 <use images/analema_luna.jpg>
-Package pdftex.def Info: images/analema_luna.jpg  used on input line 354.
+Package pdftex.def Info: images/analema_luna.jpg  used on input line 408.
 (pdftex.def)             Requested size: 249.13371pt x 166.08884pt.
 
 
@@ -909,28 +955,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10 <./images/analema_luna.jpg>]
-<images/analema_Mercuri.png, id=128, 564.4287pt x 708.246pt>
-File: images/analema_Mercuri.png Graphic file (type png)
-<use images/analema_Mercuri.png>
-Package pdftex.def Info: images/analema_Mercuri.png  used on input line 378.
-(pdftex.def)             Requested size: 203.83417pt x 255.76807pt.
-<images/analema_Terra.png, id=129, 564.4287pt x 708.246pt>
-File: images/analema_Terra.png Graphic file (type png)
-<use images/analema_Terra.png>
-Package pdftex.def Info: images/analema_Terra.png  used on input line 384.
-(pdftex.def)             Requested size: 203.83417pt x 255.76807pt.
-<images/analema_Mart.png, id=130, 564.4287pt x 708.246pt>
-File: images/analema_Mart.png Graphic file (type png)
-<use images/analema_Mart.png>
-Package pdftex.def Info: images/analema_Mart.png  used on input line 389.
-(pdftex.def)             Requested size: 203.83417pt x 255.76807pt.
-<images/analema_Júpiter.png, id=131, 564.6696pt x 708.0051pt>
-File: images/analema_Júpiter.png Graphic file (type png)
-<use images/analema_Júpiter.png>
-Package pdftex.def Info: images/analema_Júpiter.png  used on input line 395.
-(pdftex.def)             Requested size: 203.83417pt x 255.57304pt.
-
+[11 <./images/analema_luna.jpg>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -939,13 +964,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11 <./images/analema_Mercuri.png> <./images/analema_Terra.png> <./images/analema_Mart.png> <./images/analema_Júpiter.png>]
-<images/analema_Saturn.png, id=141, 564.4287pt x 708.246pt>
-File: images/analema_Saturn.png Graphic file (type png)
-<use images/analema_Saturn.png>
-Package pdftex.def Info: images/analema_Saturn.png  used on input line 404.
-(pdftex.def)             Requested size: 203.83417pt x 255.76807pt.
-
+[12]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -954,13 +973,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12 <./images/analema_Saturn.png>]
-Overfull \hbox (3.73273pt too wide) in paragraph at lines 416--416
+[13]
+Overfull \hbox (3.73273pt too wide) in paragraph at lines 437--437
 []\OT1/cmr/m/n/10.95 Wikipedia. \OT1/cmr/m/it/10.95 Ec-cen-tric ano-maly\OT1/cmr/m/n/10.95 . 2024. \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https : / / en . wikipedia . org / wiki / Eccentric _
  []
 
 
-Overfull \hbox (20.7539pt too wide) in paragraph at lines 416--416
+Overfull \hbox (20.7539pt too wide) in paragraph at lines 437--437
 []\OT1/cmr/m/n/10.95 Alexander Wolf. \OT1/cmr/m/it/10.95 Ana-lem-ma\OT1/cmr/m/n/10.95 . 2020. \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https : / / raw . githubusercontent . com / Stellarium /
  []
 
@@ -973,11 +992,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13] (C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.aux)
+[14] (C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `informe.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'informe.run.xml'.
@@ -985,17 +1008,17 @@ Package logreq Info: Writing requests to 'informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22531 strings out of 473523
- 397957 string characters out of 5713662
- 1246381 words of memory out of 5000000
- 45455 multiletter control sequences out of 15000+600000
- 570494 words of font info for 78 fonts, out of 8000000 for 9000
+ 22536 strings out of 473523
+ 397885 string characters out of 5713662
+ 1246859 words of memory out of 5000000
+ 45459 multiletter control sequences out of 15000+600000
+ 571548 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,81p,1447b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (13 pages, 2204758 bytes).
+ <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (14 pages, 2884740 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

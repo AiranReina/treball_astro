@@ -247,7 +247,16 @@
 \end{equation}
 \vspace{2mm}
 
-\noindent És interessant observar com l'equació del temps està relacionada directament amb el temps sideral aparent o, simplement, el temps sideral ($T_{sideral}$). Mentre que el temps solar es basa en la rotació de la Terra en relació amb el Sol, el temps sideral es basa en la rotació de la Terra respecte a les estrelles fixes del cel. Un dia sideral té una durada de 23 hores, 56 minuts i 4 segons, mentre que un dia solar, que és el temps que mesuren els rellotges habituals, té una durada de 24 hores. Aquesta diferència es deu al fet que la Terra, a mesura que rota sobre el seu eix, també es mou una mica en la seva òrbita al voltant del Sol, i per tant necessita fer una mica més de rotació per tornar a situar el Sol en la mateixa posició al cel. Es pot demostrar que $T_{aparent} = T_{sideral} + \alpha$ \cite{EQ_OF_TIME}, on $\alpha$ és l'ascensió recta del Sol.  
+\noindent És interessant observar com l'equació del temps està relacionada directament amb el temps sideral aparent o, simplement, el temps sideral ($T_{sideral}$). Mentre que el temps solar es basa en la rotació de la Terra en relació amb el Sol, el temps sideral es basa en la rotació de la Terra respecte a les estrelles fixes del cel. Un dia sideral té una durada de 23 hores, 56 minuts i 4 segons, mentre que un dia solar, que és el temps que mesuren els rellotges habituals, té una durada de 24 hores. Aquesta diferència es deu al fet que la Terra, a mesura que rota sobre el seu eix, també es mou una mica en la seva òrbita al voltant del Sol, i per tant necessita fer una mica més de rotació per tornar a situar el Sol en la mateixa posició al cel.
+
+\vspace{2mm}
+
+\noindent Per definició, l'equació del temps és $EoT = t_{\text{aparent}} - t_{\text{mitjà}} \equiv GHA - GMHA$. $GHA$ significa "Greenwich Hour Angle" i $GMHA$ "Greenwich Mean Hour Angle". $GMHA \equiv UT - \text{offset}$, on l'\textit{offset} és el temps mig solar quan el Sol està en el meridià de Greenwich, és a dir, les 12h (migdia solar mitjà). D'altra banda, si seguim les definicions dels angles de l'esfera celeste, $GHA = GAST - \alpha$, on $GAST$ és el "Greenwich Apparent Sidereal Time" i $\alpha$ és l'ascensió recta. Si juntem totes les relacions, ens dona una expressió que relaciona directament l'equació del temps amb el temps sideral.
+
+\begin{equation}
+    EoT = GAST - \alpha - UT + offset
+    \label{eq:EoT_ST}
+\end{equation}
 
 \vspace{10mm}
 \hrule\
@@ -258,21 +267,71 @@
 
 \section*{EXERCICI 6}
 
-\noindent Per realitzar aquest exercici, s'ha escrit un script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu analema.py. El codi et calcula la posició del Sol [(dec,ra) i la (alt,az)], et calcula la diferencia entre el temps solar mitjà i el temps solar aparent a partir de l'equació del temps i, finalment, et ploteja l'analema solar vist des de Bellaterra. La imatge generada es pot veure en la figura \ref{fig:analema_alt}.
+\noindent Per realitzar aquest exercici, s'ha escrit un script en Python que es pot trobar al GitHub del treball. L'arxiu de l'script es diu \texttt{analema.py}. El codi calcula la posició del Sol [en coordenades horitzontals $(\text{Altitud}, \text{Azimut}) = (\text{alt}, \text{az})$ i en coordenades equatorials $(\text{Declinació}, \text{Ascensió Recta}) = (\text{dec}, \text{ra}) = (\delta, \alpha)$], calcula la diferència entre el temps solar mitjà i el temps solar aparent a partir de l’equació del temps i, finalment, genera la gràfica de l’analema solar vist des de Bellaterra. Els analemes generats es poden veure a la figura~\ref{fig:analema_terra}.
+
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.55\textwidth]{images/analema_alt.png}
-    \caption{Analema solar vist des de Bellaterra. Font: Github del treball.}
-    \label{fig:analema_alt}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_dec_eot.png}
+        \caption{Analema solar vist des de la Terra $dec$ ($EoT$). Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_alt_az.png}
+        \caption{Analema solar vist des de la Terra $alt$ ($az$). Font: Github del treball.}
+    \end{subfigure}
+\caption{Analemes solars vist des de la Terra}
+\label{fig:analema_terra}
 \end{figure}
 \vspace{2mm}
 
-\noindent Com es pot observar, l'analema solar pateix una petita inlinació. Un analema es veu perfectament vertical quan s'observa des de l'equador a longituds específiques on el migdia solar mitjà coincideix amb el migdia solar aparent. Quan es varia la latitud respecte a l'equador, l'analema es va inlinant lleugerament degut a la inclinació de l'eix terrestre i l'excentricitat de l'òrbita de la Terra.
+\noindent L'analema graficat en coordenades equatorials (O, equivalentment, la declinació en funció de l'equació del temps) és general del planeta Terra mentres que el graficat en coordenades horitzontals és vàlid per unes coordenades terrestres específiques (Les de Bellaterra en aquest cas). Aquesta observació és demostrable directament de la naturalesa d'ambdós coordenades, doncs les primeres són coordenades definides des de la própia Terra mentre que les segones es defineixen localment. Ambdúes representacions són vàlides, però la versió en coordenades horitzontals ens aporta informació extra doncs representa el que qualsevol observador pot analitzar a simple vista, té aplicacions pràctiques (Com als rellotges solars, concepte tractat en un exercici més endavant) i, a més, genera un grau de llibertat extra al anàlisi pel fet d'introduir variació dependent de les coordenades terrestres de l'observador. Degut a tot això, a partir d'ara sempre que es tracti el concepte d'analema, se suposarà intrínsicament la versió en coordenades horitzontals.
 
 \vspace{2mm}
 
-\noindent Finalment, és interessant analitzar l'analema que es troba en la paret de la facultat de ciències de l'UAB (La imatge es troba en l'anunciat, que es pot trobar en el Github del treball). La figura mostra un conjunt d'analemes observats des de Bellaterra per diferents hores del día. Els analemes tenen un loop més gros (Decembre-Gener) i un més prim (Juny-Juliol). Els analemes es mostren inclinats com es pot esperar a una latitud com Bellaterra. A priori, sembla que els analemes estan representats de forma correcta, tot i que no es pot assegurar amb exactitud degut a que faria falta un estudi més exhaustiu. El fet d'observar diversos analemes prové del fet que, realment, l'observat en la imatge és la correcció del rellotge solar degut a la variació de la posició del sol en la bòveda celeste a una mateixa hora al llarg de l'any. L'explicació exhaustiva d'aquest fenòmen es troba explicitada en l'exercici 8.
+\noindent Finalment, és interessant analitzar l'analema que es troba en la paret de la facultat de ciències de l'UAB. En l'anunciat de l'entrega se'ns ha proporcionat la imatge sobre aquest analema. Aquesta es pot veure en la figura \ref{fig:analema_UAB}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/analema_UAB.png}
+    \caption{Analema solar a la paret de la facultat de ciències de l'UAB. Font: Enunciat Entrega.}
+    \label{fig:analema_UAB}
+\end{figure}
+\vspace{2mm}
+
+\noindent Com es pot observar, la placa conté un conjunt d'analemes. Cada analema està asociat a una hora del día, des de les 10h fins les 17h. A priori sembla que els analemes són correctes doncs tenen forma de "8", tenen un braç més llarg que l'altre, estan espaiats coherentment sabent que cada analema és l'adequat a una hora específica, etc. Igualment, és interessant realitzar un anàlisi més profund. En el mateix codi, s'ha generat també una figura com la que es pot veure a la entrada de la UAB. El resultat es pot veure en la imatge \ref{subfig:analema_simUAB}.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_simUAB.png}
+        \caption{Analemes d'un conjunt d'hores vist des de la Terra. Font: Github del treball.}
+        \label{subfig:analema_simUAB}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_simUAB_invert.png}
+        \caption{Analemes (Invertint l'eix y) d'un conjunt d'hores vist des de la Terra. Font: Github del treball.}
+        \label{subfig:analema_simUAB_invert}
+    \end{subfigure}
+\caption{Analemes solars vists des de Bellaterra des de les 10h fins les 17h}
+\end{figure}
+\vspace{2mm}
+
+\noindent Com es pot observar, no s'asemblen molt el de la paret de la UAB i el graficat amb Python. Els 'loops' prims estàn localitzats a la part baixa dels analemes (En la figura de la UAB) mentre que, teóricament, s'observa que hauríen d'estar a la part alta. També, s'observa que els analemes de la UAB tenen una tendència a pujar en altitud mentre que els teórics disminueixen. Sembla ser que els analemes de la entrada de la UAB tenen l'eix vertical invertit i, si es fa aquesta transformació en els graficats teóricament amb Python, s'obté la figura \ref{subfig:analema_simUAB_invert}. Comparant la figura invertida amb els analemes de l'entrada de la UAB, es veu una correlació molt major. Igualment no són exactes, doncs els de la UAB tenen una tendencia a augmentar en declinació mentre que els teórics segueixen una corba amb un mínim. També, la inclinació dels analemes és diferent en ambdós figures. Sembla ser que els eixos no són dúes rectes perpendiculars, sinó que tenen una certa curvatura. Implementar un model que intenti replicar la figura seguint aquesta hipòtesi es complica doncs els eixos poden ser completament arbitraris, així doncs s'emprarà la figura invertida com la millor aproximació.
+
+\vspace{2mm}
+
+\noindent L'explicació del fet que els analemes observats a l'entrada de la UAB no segueixen la figura teoritzada prové del fet que, realment, la intenció de la figura no és representar els analemes a diverses hores. Aquest és un rellotge solar analemàtic, el qual utilitza la projecció adaptada a la paret vertical i al gnomon i combina diversos factors per poder llegir l'hora solar al llarg de tot l'any. Els analemes graficats segueixen un sistema de coordenades útils i, per tant, la hipòtesi final és correcta. Un anàlisi més detallat sobre els rellotges solars analèmatics i la utilitat dels analemes en aquests dispositius es pot trobar en l'exercici 8.
+
+\vspace{2mm}
+
+\noindent Per completitud, s'analitzen també els analemes teòrics de forma separada (figura \ref{subfig:analema_simUAB}). S'observa que l'analema corresponent a les 12h es presenta gairebé vertical i amb una alçada màxima respecte als altres. Això és coherent amb el fet que les 12h solars representen el migdia solar veritable, moment en què el Sol assoleix la seva màxima altitud al cel per a un dia determinat. Pel que fa a la inclinació dels altres analemes, es constata que: Per hores anteriors a les 12h, l'analema es desvia cap a azimuts menors (més cap a l'est) i, per hores posteriors a les 12h, es desvia cap a azimuts majors (més cap a l'oest). Aquest comportament reflecteix la variació diària del moviment aparent del Sol, així com l'efecte combinat de la declinació solar i la equació del temps en cada moment del dia.
 
 \vspace{10mm}
 \hrule\
@@ -286,12 +345,7 @@
 \noindent Anem a comparar doncs si l'analema que s'ha generat en aquest treball és correcte. En l'aplicació d'ordinador Stellarium hi ha una opció d'executar scripts d'usuaris. Hi ha un script que genera un analema visual \cite{SCRIPT_STELLARIUM}. Cal recalcar que aquest script genera un analema solar a 2020, però, si en l'animació abans de que es generi l'analema cambiem la data, et genera l'analema pel 2025. La figura \ref{fig:analema_real} mostra l'analema generat per l'script en l'Stellarium.
 
 \vspace{2mm}
-\begin{figure} [h!]
-    \centering
-    \includegraphics[width=0.37\textwidth]{images/analema_real.png}
-    \caption{Analema solar generat per l'script de l'Stellarium. Font: Alexander Wolf.}
-    \label{fig:analema_real}
-\end{figure}
+FIG: analema real
 \vspace{2mm}
 
 \noindent Com es pot veure si es compara amb la figura \ref{fig:analema_alt}, ambdós analemas són, en esència, el mateix. Els dos es troben inclinats lleugerament cap a l'esquerra i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud per sobre dels $70 \degree$ i un mínim d'altitud per sota dels $30 \degree$. També, es pot observar que el analema de l'Stellarium està limitat en un azimut de $[175\degree ,185\degree]$ i, el generat propi, està limitat a $5 \degree$ per banda al voltant del meridià ón està centrat; ambdós límits són equivalents. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. 
@@ -371,39 +425,6 @@
 \newpage
 \section*{ANNEX}
 
-\begin{figure}[h!]
-    \centering
-    \begin{subfigure}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/analema_Mercuri.png}
-        \caption{Analema solar de Mercuri per Python. Font: Github del treball.}
-    \end{subfigure}
-    \hspace{0.05\textwidth}
-    \begin{subfigure}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/analema_Terra.png}
-        \caption{Analema solar de la Terra per Python. Font: Github del treball.}
-    \end{subfigure}
-    \begin{subfigure}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/analema_Mart.png}
-        \caption{Analema solar de Mart per Python. Font: Github del treball.}
-    \end{subfigure}
-    \hspace{0.05\textwidth}
-    \begin{subfigure}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/analema_Júpiter.png}
-        \caption{Analema solar de Júpiter per Python. Font: Github del treball.}
-    \end{subfigure}
-\end{figure}
-
-    \newpage
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.45\textwidth]{images/analema_Saturn.png}
-    \caption{Analema solar de Saturn per Python. Font: Github del treball.}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
