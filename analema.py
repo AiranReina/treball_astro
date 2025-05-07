@@ -1,110 +1,136 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import ephem
-from datetime import datetime, timedelta
+from scipy.special import jn
 
-###########################################################################
+# Constants i paràmetres necesàris per la simulació
+e = 0.0167
+eps_deg = 23.44
+eps = np.radians(eps_deg)
+varpi_deg = 102.937348 + 180
+varpi = np.radians(varpi_deg)
+N_terms = 20
+tau = 1.07
+days = np.linspace(0, 365.25, 1000)
 
-#Primer, definim les coordenades de Bellaterra
-latitude = '41.505789'
-longitude = '2.089509'
+# Calculem l'EoT per la terra
+M = 2 * np.pi * (days - tau) / 365.25
+E_series = M.copy()
+for n in range(1, N_terms + 1):
+    E_series += (2 / n) * jn(n, n * e) * np.sin(n * M)
+nu = np.arctan2(np.sqrt(1 - e**2) * np.sin(E_series), np.cos(E_series) - e)
+lambda_sun_earth = (nu + varpi) % (2 * np.pi)
 
+alpha = np.unwrap(np.arctan2(np.cos(eps) * np.sin(lambda_sun_earth), np.cos(lambda_sun_earth)))
+EOT_rad = M - alpha
+EOT_min = EOT_rad * (1440 / (2 * np.pi))
+EOT_min -= np.mean(EOT_min)
 
-#Creem un objecte Observer d'ephem per a Bellaterra, així ens facilitarem ...
-#... el càlcul de la posició del Sol
-observer = ephem.Observer()
-observer.lat = latitude
-observer.lon = longitude
+delta = np.arcsin(np.sin(eps) * np.sin(lambda_sun_earth))
 
-
-#Creem una llista de dates per a tot l'any 2025. De nou, utilitzant ephem,...
-#... ens simplificarà el programa
-start_date = datetime(2025, 1, 1)
-end_date = datetime(2025, 12, 31)
-days = [start_date + timedelta(days=i) for i in range((end_date - start_date).days + 1)]
-
-
-#Registrem els valors de la declinació, l'ascensió recta i l'elevació i azimut del Sol per cada día. ...
-#... Realment només ens interessa la declinació i elevació, però trobem l'ascensió ...
-#... recta i azimut per completitud
-ra_values = []
-dec_values = []
-alt_values = []
-az_values = []
-
-for day in days:
-    observer.date = ephem.Date(day + timedelta(hours=12))
-    sun = ephem.Sun(observer)
-    ra_values.append(sun.ra)
-    dec_values.append(sun.dec)
-    alt_values.append(sun.alt)
-    az_values.append(sun.az)
+x = EOT_min / 4
+y = np.degrees(delta)
 
 
-#Fem les conversions d'unitats necessàries
-ra_deg = np.array(ra_values) * 180 / np.pi  #Radians a graus
-dec_deg = np.array(dec_values) * 180 / np.pi  #Radians a graus
-alt_deg = np.array(alt_values) * 180 / np.pi  #Radians a graus
-az_deg = np.array(az_values) * 180 / np.pi  #Radians a graus
-ra_hours = ra_deg * 24 / 360  #Graus a hores
-dec_hours = dec_deg * 24 / 360  #Graus a hores
-alt_hours = alt_deg * 24 / 360  #Graus a hores
-az_hours = az_deg * 24 / 360  #Graus a hores
-
-
-#Trobem els valors de la diferència horària entre el temps solar aparent...
-#... i el temps mitjà a cada día emprant la fórmula de la equació del temps. ...
-#... Aprofitem a enregistrar els valors de D(d) per completitud
-D_aux = []
-time_dif = []
-
-for d in range(len(days)):
-    D_aux.append(163.3155293 + 0.01720197 * d)
-    time_dif.append(( -7.659 * np.sin(D_aux[-1]) + 9.863 * np.sin(2 * D_aux[-1] + 3.5932) ) * 360 / (24*60))
-
-
-#Dibuixem l'analema del Sol dec(\Delta t) a l'any 2025. 
+# Grafiquem l'analema solar en declinació (EoT)
 plt.style.use('classic')
-plt.figure(figsize=(8,8), facecolor='white')
-plt.plot(time_dif, dec_hours, label= r"$dec(\Delta t)$", color='r')
-plt.xlabel( r"$T_{aparent} - T_{mitjà}$ [$\degree$]")
-plt.ylabel("$Declinatció$ [$h$]")
-plt.title("Analema del Sol (2025)")
-ax = plt.gca()
-ax.axhline(y=0, color='black', linewidth=1)
-ax.axvline(x=0, color='black', linewidth=1)
-for spine in ax.spines.values():
-    spine.set_visible(True)
+plt.figure(figsize=(8, 8), facecolor='white')
+sc = plt.scatter(x, y, c=days, cmap='jet', label='Analema solar', s=100, edgecolors='none')
+cbar = plt.colorbar(sc)
+cbar.set_label('Dia del cicle')
+plt.xlabel(r'$t_{aparent}-t_{mitjà}$ [$\degree$]')
+plt.ylabel(r'Dec [$\degree$]')
+plt.title('Analema solar a la Terra')
 plt.grid(True)
-plt.legend()
-plt.savefig("informe/images/analema_dec.png", dpi=300, bbox_inches='tight')
+plt.tick_params(direction='in', top=True, right=True)
+plt.yticks(np.arange(-25, 26, 5))
+plt.xticks(np.arange(-5, 6, 1))
+plt.tight_layout()
+plt.savefig("informe/images/analema_dec_eot.png", dpi=300, bbox_inches='tight')
 plt.show()
 
-#Dibuixem l'analema del Sol alt(\Delta t) a Bellaterra per a l'any 2025. 
-plt.style.use('classic')
-plt.figure(figsize=(8,8), facecolor='white')
-plt.plot(time_dif, alt_deg, label=r"$alt(\Delta t)$", color='r')
-plt.xlabel( r"$T_{aparent} - T_{mitjà}$ [$\degree$]")
-plt.ylabel(r"$Elevació$ [$\degree$]")
-plt.title("Analema del Sol en Bellaterra (2025)")
-ax = plt.gca()
-ax.axhline(y=0, color='black', linewidth=1)
-ax.axvline(x=0, color='black', linewidth=1)
-for spine in ax.spines.values():
-    spine.set_visible(True)
-plt.grid(True)
-plt.legend()
-plt.savefig("informe/images/analema_alt.png", dpi=300, bbox_inches='tight')
-plt.show()
+# Grafiquem l'analema solar en Alt(Az)
+lat = np.radians(41.499340)
+local_time = 16
+H_deg = 15 * (local_time + EOT_min / 60 - 12)
+H_rad = np.radians(H_deg)
 
-#Dibuixem l'analema del Sol alt(\Delta t) a Bellaterra per a l'any 2025. 
-plt.style.use('classic')
-plt.figure(figsize=(8,8), facecolor='white')
-plt.plot(az_deg, alt_deg, label=r"$alt(az)$", color='r')
-plt.xlabel( r"$Azimut$ [$\degree$]")
-plt.ylabel(r"$Elevació$ [$\degree$]")
-plt.title("Analema del Sol en Bellaterra (2025)")
+alt = np.degrees(np.arcsin(np.sin(lat) * np.sin(delta) + np.cos(lat) * np.cos(delta) * np.cos(H_rad)))
+az = np.degrees(np.arctan2(
+    -np.sin(H_rad),
+    -np.cos(H_rad)*np.sin(lat) + np.tan(delta)*np.cos(lat)
+))
+az = (az) % 360
+
+plt.figure(figsize=(8, 8), facecolor='white')
+sc = plt.scatter(az, alt, c=days, cmap='jet', label='Analema solar', s=100, edgecolors='none')
+cbar = plt.colorbar(sc)
+cbar.set_label('Dia del cicle')
+plt.xlabel(r'Az [$\degree$]')
+plt.ylabel(r'Alt [$\degree$]')
+plt.title(f'Analema solar a Bellaterra (Inici: 01/01/2025 a {local_time}h)')
 plt.grid(True)
-plt.legend()
+plt.tick_params(direction='in', top=True, right=True)
+plt.tight_layout()
 plt.savefig("informe/images/analema_alt_az.png", dpi=300, bbox_inches='tight')
+plt.show()
+
+# Grafiquem l'analema solar de la porta de la UAB
+hours = [10,11,12,13,14,15,16,17]
+plt.figure(figsize=(8, 8), facecolor='white')
+for hour in hours:
+    local_time = hour
+    H_deg = 15 * (local_time + EOT_min / 60 - 12)
+    H_rad = np.radians(H_deg)
+
+    alt = np.degrees(np.arcsin(np.sin(lat) * np.sin(delta) + np.cos(lat) * np.cos(delta) * np.cos(H_rad)))
+    az = np.degrees(np.arctan2(
+        -np.sin(H_rad),
+        -np.cos(H_rad)*np.sin(lat) + np.tan(delta)*np.cos(lat)
+    ))
+    az = (az) % 360
+    
+    sc = plt.scatter(az, alt, c=days, cmap='jet', s=25, edgecolors='none')
+    plt.text(x=az[-1], y=alt[-1]-5, s=f'{hour}h')
+
+plt.xlabel(r'Az [$\degree$]')
+plt.ylabel(r'Alt [$\degree$]')
+plt.xticks([])
+plt.yticks([])
+plt.title(f'Analemes solars a Bellaterra de {hours[0]}h a {hours[-1]}h')
+plt.grid(True)
+plt.tick_params(direction='in', top=True, right=True)
+plt.tight_layout()
+plt.savefig("informe/images/analema_simUAB.png", dpi=300, bbox_inches='tight')
+plt.show()
+
+# Grafiquem l'analema solar de la porta de la UAB invertit
+hours = [10,11,12,13,14,15,16,17]
+plt.figure(figsize=(10, 8), facecolor='white')
+for hour in hours:
+    local_time = hour
+    H_deg = 15 * (local_time + EOT_min / 60 - 12)
+    H_rad = np.radians(H_deg)
+
+    alt = np.degrees(np.arcsin(np.sin(lat) * np.sin(delta) + np.cos(lat) * np.cos(delta) * np.cos(H_rad)))
+    az = np.degrees(np.arctan2(
+        -np.sin(H_rad),
+        -np.cos(H_rad)*np.sin(lat) + np.tan(delta)*np.cos(lat)
+    ))
+    az = (az) % 360
+    
+    sc = plt.scatter(az, alt, c=days, cmap='jet', s=25, edgecolors='none')
+    plt.text(x=az[-1], y=alt[-1]-3, s=f'{hour}h')
+
+plt.gca().invert_yaxis() #Important! Invertim el eix y!
+cbar = plt.colorbar(sc)
+cbar.set_label('Dia del cicle')
+plt.xlabel(r'Az [$\degree$]')
+plt.ylabel(r'Alt [$\degree$]')
+plt.xticks([])
+plt.yticks([])
+plt.title(f'Analemes solars a Bellaterra de {hours[0]}h a {hours[-1]}h (Invertit)')
+plt.grid(True)
+plt.tick_params(direction='in', top=True, right=True)
+plt.tight_layout()
+plt.savefig("informe/images/analema_simUAB_invert.png", dpi=300, bbox_inches='tight')
 plt.show()

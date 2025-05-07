@@ -5,22 +5,22 @@ from scipy.special import jn
 
 # Inicialitzem els paràmetres órbitals dels planetes
 planets_test = {
-    'Earth': {
+    'Terra': {
         'e': 0.0167,
         'varpi_deg': 102.937348 + 180,
         'eps_deg': 23.44
     },
-    'Mercury': {
+    'Mercuri': {
         'e': 0.2056,
         'varpi_deg': 77.456 + 180,
         'eps_deg': 0.03
     },
-    'Mars': {
+    'Mart': {
         'e': 0.0934,
         'varpi_deg': 336.04084 + 180,
         'eps_deg': 25.19
     },
-    'Jupiter': {
+    'Júpiter': {
         'e': 0.0489,
         'varpi_deg': 14.75385 + 180,
         'eps_deg': 3.13
@@ -75,17 +75,17 @@ for i, (planet, params) in enumerate(planets_test.items()):
     H_deg = 15 * (hora_local_p + EOT_min / 60 - 12)
     H_rad = np.radians(H_deg)
 
-    elev = np.degrees(np.arcsin(
+    alt = np.degrees(np.arcsin(
         np.sin(lat_rad) * np.sin(delta) +
         np.cos(lat_rad) * np.cos(delta) * np.cos(H_rad)
     ))
-    azim = np.degrees(np.arctan2(
+    az = np.degrees(np.arctan2(
         -np.sin(H_rad),
         -np.cos(H_rad) * np.sin(lat_rad) + np.tan(delta) * np.cos(lat_rad)
     )) % 360
 
     ax = axes[i]
-    sc = ax.scatter(azim, elev, c=percent, cmap='jet', s=100, edgecolors='none')
+    sc = ax.scatter(az, alt, c=percent, cmap='jet', s=100, edgecolors='none')
     ax.set_title(planet)
     ax.set_xlabel(r'Az [$\degree$]')
     ax.grid(True)
@@ -96,5 +96,5 @@ fig.suptitle(f"Analema Solar per Planeta a Latitud {np.degrees(lat_rad):.1f}° (
 cbar = plt.colorbar(sc, label='Percentatge del any')
 cbar.set_ticks([0, 100])
 plt.tight_layout()
-plt.savefig("informe/images/analema_Planetes.png", dpi=300, bbox_inches='tight')
+plt.savefig("informe/images/analema_planetes.png", dpi=300, bbox_inches='tight')
 plt.show()
