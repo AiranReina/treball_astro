@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  8 MAY 2025 14:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.21)  8 MAY 2025 17:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,11 +941,12 @@ File: images/analema_Mart.png Graphic file (type png)
 <use images/analema_Mart.png>
 Package pdftex.def Info: images/analema_Mart.png  used on input line 408.
 (pdftex.def)             Requested size: 203.83417pt x 169.35574pt.
-File: images/analema_Mart.png Graphic file (type png)
-<use images/analema_Mart.png>
-Package pdftex.def Info: images/analema_Mart.png  used on input line 414.
-(pdftex.def)             Requested size: 203.83417pt x 169.35574pt.
-<images/analema_Júpiter.png, id=132, 687.0468pt x 564.4287pt>
+<images/stellarium_mart_12.png, id=132, 584.1825pt x 504.6855pt>
+File: images/stellarium_mart_12.png Graphic file (type png)
+<use images/stellarium_mart_12.png>
+Package pdftex.def Info: images/stellarium_mart_12.png  used on input line 414.
+(pdftex.def)             Requested size: 203.83417pt x 176.09581pt.
+<images/analema_Júpiter.png, id=133, 687.0468pt x 564.4287pt>
 File: images/analema_Júpiter.png Graphic file (type png)
 <use images/analema_Júpiter.png>
 Package pdftex.def Info: images/analema_Júpiter.png  used on input line 419.
@@ -954,7 +955,7 @@ File: images/analema_Júpiter.png Graphic file (type png)
 <use images/analema_Júpiter.png>
 Package pdftex.def Info: images/analema_Júpiter.png  used on input line 425.
 (pdftex.def)             Requested size: 203.83417pt x 167.4524pt.
-<images/analema_Saturn.png, id=133, 694.7556pt x 564.4287pt>
+<images/analema_Saturn.png, id=134, 694.7556pt x 564.4287pt>
 File: images/analema_Saturn.png Graphic file (type png)
 <use images/analema_Saturn.png>
 Package pdftex.def Info: images/analema_Saturn.png  used on input line 430.
@@ -985,12 +986,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12 <./images/analema_Mart.png> <./images/analema_Júpiter.png> <./images/analema_Saturn.png>]
-<images/analema_luna.jpg, id=150, 289.08pt x 192.72pt>
+[12 <./images/analema_Mart.png> <./images/stellarium_mart_12.png> <./images/analema_Júpiter.png> <./images/analema_Saturn.png>]
+<images/analema_luna.jpg, id=153, 289.08pt x 192.72pt>
 File: images/analema_luna.jpg Graphic file (type jpg)
 <use images/analema_luna.jpg>
 Package pdftex.def Info: images/analema_luna.jpg  used on input line 456.
-(pdftex.def)             Requested size: 249.13371pt x 166.08884pt.
+(pdftex.def)             Requested size: 226.48395pt x 150.98851pt.
+<images/analema_lluna.png, id=157, 548.5293pt x 564.9105pt>
+File: images/analema_lluna.png Graphic file (type png)
+<use images/analema_lluna.png>
+Package pdftex.def Info: images/analema_lluna.png  used on input line 467.
+(pdftex.def)             Requested size: 226.48395pt x 233.25256pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 
 
@@ -1009,7 +1019,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14] (C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.aux)
+[14 <./images/analema_lluna.png>] (C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1021,17 +1031,17 @@ Package logreq Info: Writing requests to 'informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22562 strings out of 473523
- 398669 string characters out of 5713662
- 1246922 words of memory out of 5000000
- 45484 multiletter control sequences out of 15000+600000
+ 22578 strings out of 473523
+ 399164 string characters out of 5713662
+ 1247093 words of memory out of 5000000
+ 45499 multiletter control sequences out of 15000+600000
  571548 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,81p,1447b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (14 pages, 4150613 bytes).
+Output written on C:\Users\Usuario\repos\entregas\entregas2025\entrega_astro\informe\build\informe.pdf (14 pages, 5091297 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

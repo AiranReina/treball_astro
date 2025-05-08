@@ -411,7 +411,7 @@
     \hspace{0.05\textwidth}
     \begin{subfigure}{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/analema_Mart.png}
+        \includegraphics[width=\textwidth]{images/stellarium_mart_12.png}
         \caption{Analema solar de Mart per l'Stellarium. Font: Stellarium.}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
@@ -436,16 +436,16 @@
         \includegraphics[width=\textwidth]{images/analema_Saturn.png}
         \caption{Analema solar de Saturn per l'Stellarium. Font: Stellarium.}
     \end{subfigure}
-\caption{aakalk}
+\caption{Analemes generats a l'Stellarium i per Python de diversos planetes del sistema solar.}
 \label{fig:planetes}
 \end{figure}
 \vspace{2mm}
 
-\noindent Per realitzar aquest apartat s'ha escrit un nou script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu $analema\_planetes.py$. El codi et calcula la declinació del sol a cada planeta, et calcula la diferència entre el temps solar mitjà i el temps solar aparent a partir d'una versió de l'equació del temps diferent a la de l'exercici 6 i, finalment, et grafica l'analema solar vist des de cadascún dels planetes. L'equació del temps utilitzada en aquest apartat és $EoT = M - ra$ (On $ra$ és l'ascensió recta del sol i $M$ és l'anomalia mitjana) i, ara, $M$ i $ra$ es troben emprant l'expressió exacta de l'exercici 4 truncada a 20 termes de la sèrie de Bessel. A més, s'ha obtingut la declinació i no s'ha emprat la llibreria ephem, ja que la llibreria et troba la declinació del sol vist des de la Terra. Aquests canvis es deuen a que és necesàri modificar els paràmetres de les òrbites planetàries i, per tant, no es pot emprar el codi $analema.py$.
+\noindent Per realitzar aquest apartat s'ha escrit un nou script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu $analema\_planetes.py$. El codi et calcula la posició del sol (En coordenades horitzontals) vist des de cada planeta a les 12h. L'equació del temps utilitzada en aquest apartat és $EoT = M - ra$ (On $ra$ és l'ascensió recta del sol i $M$ és l'anomalia mitjana) i, ara, $M$ i $ra$ es troben emprant l'expressió exacta de l'exercici 4 truncada a 20 termes de la sèrie de Bessel. Aquests canvis es deuen a que és necesàri modificar els paràmetres de les òrbites planetàries i, per tant, no es pot emprar l'expressió \ref{eq_time}. Això es deu a que aquesta expressió s'ha ajustat amb valors experimentals des de la Terra.
 
 \vspace{2mm}
 
-\noindent Les órbites escullides són interessants doncs mostren una gran variació en l'excentricitat i l'inclinació i, per tant, el gran rang d'aspectes que es poden observar en un analema. Tenim 2 grans grups d'analemes segons la seva forma: analemes en forma de vuit (A la Terra, Mart o Saturn) i en forma elíptica (A Mercuri o Júpiter). Els planetes amb l'analema en forma de vuit tenen en comú una obliquitat alta ($\sim 25\degree$), mentre que els que tenen forma elíptica tenen una obliquitat molt baixa ($\sim 1\degree$). Amb aquesta observació es pot intuir la relació directa entre l'obliqüitat i l'accentuació del loop de l'analema. Com a exeple extrem, es pot observar Urà, que té una obliqüitat de $97.86 \degree$ i, si s'observa el seu analema, fa una forma de vuit extremadament accentuada. 
+\noindent Com es pot observar, els analemes són similars però presenten diferències apreciables. De fet, les diferències són similars a les que es podien observar des de la Terra. IMPORTANTE ACABAR AKAKALLAMKAKALAÑÑAÑA
 
 \vspace{2mm}
 
@@ -453,14 +453,24 @@
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.55\textwidth]{images/analema_luna.jpg}
+    \includegraphics[width=0.50\textwidth]{images/analema_luna.jpg}
     \caption{Analema lunar vist des de la Terra. Font: TWANIGHT \cite{ANALEMA_MOON}.}
     \label{fig:analema_luna}
 \end{figure}
 
 \vspace{2mm}
 
-\noindent Com es pot observar, la figura és la que es troba a l'anunciat de l'entrega. La imatge 'Lunar Analemma' és una composició fotogràfica que mostra el moviment de la Lluna sobre el Teatre-Museu Dalí de Figueres, Espanya, al llarg d'un mes lunar. Aquesta tècnica és similar a l'analema solar, però en aquest cas es realitza en un període de temps molt més curt (degut al fet que el període lunar és d'uns 27 dies, mentre que el solar és d'uns 365, aproximadament). Com es pot observar, la figura és coherent amb els analemes graficats anteriorment. L'órbita de la lluna té propietats similars a les de Júpiter, per tant, s'observa una figura allargada i inclinada també. A diferència de l'analema de Júpiter, aquesta té forma de vuit, però és probable doncs l'analema de Júpiter està bastant allargat i aprimat, per tant, pot ser que estigui a prop d'una obliqüitat que permet la formació del loop.
+\noindent Com es pot observar, la figura és la que es troba a l'anunciat de l'entrega. La imatge 'Lunar Analemma' és una composició fotogràfica que mostra el moviment de la Lluna sobre el Teatre-Museu Dalí de Figueres, Espanya, al llarg d'un mes lunar. Aquesta tècnica és similar a l'analema solar, però en aquest cas es realitza en un període de temps molt més curt (degut al fet que el període lunar és d'uns 27 dies, mentre que el solar és d'uns 365, aproximadament). Com es pot observar, la figura és coherent amb els analemes graficats anteriorment. Emprant un mètode similar, s'ha generat un arxiu ('moon.py') el qual gener aquest analema. La figura del analema lunar teóric a les 23:59:59h a Bellaterra es pot veure en la figura \ref{fig:lluna}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.50\textwidth]{images/analema_lluna.png}
+    \caption{Analema lunar a la Terra per Python. Font: Github del treball.}
+    \label{fig:lluna}
+\end{figure}
+\vspace{2mm}
+
+\noindent El recorregut de l'analema és interessant ja que té forma de vuit, està bastant inclinat i té un 'loop' prim i un de gruixut. Sembla ser com els dels altres planetes, però té una diferència notable. Sembla ser que no és tancat, doncs si s'observa el principi d'any lunar amb el final, no arriben a coincidir. Aquesta no és una propietat única de l'analema lunar, de fet, tots els analemes tenen aquesta propietat. La diferencia prové del fet que un 'any lunar' és molt més petit que l'any d'un planeta al voltant del sol, per tant, la variació día a dia és molt gran. L'analema depén lleugerament del any en el que es comença a fotografiar, per tant, no pot tenir les mateixes condicions al final que al inici tampoc.
 
 
 %\vspace{10mm}
