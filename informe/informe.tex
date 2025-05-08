@@ -342,13 +342,18 @@
 
 \section*{EXERCICI 7}
 
-\noindent Anem a comparar doncs si l'analema que s'ha generat en aquest treball és correcte. En l'aplicació d'ordinador Stellarium hi ha una opció d'executar scripts d'usuaris. Hi ha un script que genera un analema visual \cite{SCRIPT_STELLARIUM}. Cal recalcar que aquest script genera un analema solar a 2020, però, si en l'animació abans de que es generi l'analema cambiem la data, et genera l'analema pel 2025. La figura \ref{fig:analema_real} mostra l'analema generat per l'script en l'Stellarium.
+\noindent Anem a comparar doncs si l'analema que s'ha generat en aquest treball és correcte. En l'aplicació d'ordinador Stellarium hi ha una funcionalitat que és 'Ephemeris'. Aquesta funció permet situar-se en unes coordenades específiques en un temps determinat en un planeta, escullir un objecte celeste, un rang temporal i un pas de temps i et retorna les coordenades de l'objecte a cada pas de temps durant el rang temporal sencer. S'ha emprat aquest mètode per trobar les coordenades del sol durant un any amb un pas de temps de 15 díes solars. Amb aquest procés s'han trobat els punts n-èssims d'un analema sent n els múltiples de 15. Finalment, el programa et permet visualitzar la posició de les coordenades generades. Si es realitza aquest procés començant el 01/01/2025 a les 16:00h, el resultat és:
 
 \vspace{2mm}
-FIG: analema real
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.50\textwidth]{images/stellarium_terra_16.png}
+    \caption{Analema solar a la Terra generat amb Stellarium. Font: Stellarium.}
+    \label{fig:stellarium_terra_16}
+\end{figure}
 \vspace{2mm}
 
-\noindent Com es pot veure si es compara amb la figura \ref{fig:analema_alt}, ambdós analemas són, en esència, el mateix. Els dos es troben inclinats lleugerament cap a l'esquerra i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud per sobre dels $70 \degree$ i un mínim d'altitud per sota dels $30 \degree$. També, es pot observar que el analema de l'Stellarium està limitat en un azimut de $[175\degree ,185\degree]$ i, el generat propi, està limitat a $5 \degree$ per banda al voltant del meridià ón està centrat; ambdós límits són equivalents. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. 
+\noindent Com es pot veure si es compara amb la imatge de la dreta de la figura \ref{fig:analema_terra}, ambdós analemes són, en esència, el mateix. Els dos es troben inclinats cap a la dreta i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud proper als $37 \degree$ i un mínim d'altitud proper als $5 \degree$. També, es pot observar que els dos analemes estàn limitats en un azimut entre, més o menys, $230 \degree$ i $270 \degree$. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. Igualment, es troba que no cuadren entre els valors de forma exacta. Això es deu a que el trobat teòricament és una aproximació mentre que l'stellarium empra models astronòmics avançats i dades de precisió directament extrets de agències espaials importants. També, es pot veure una petita variació en la forma, aquest efecte es deu a que la imatge generada teóricament està representada en un eix pla mentre que, l'Stellarium, t'ho mostra en uns eixos esfèrics (A més del ja anomenat efecte per aproximació).
 
 \vspace{10mm}
 \hrule\
@@ -372,7 +377,7 @@ FIG: analema real
 
 \section*{EXERCICI 9}
 
-\noindent Finalment, per aquest últim apartat, s'intentarà observar la influència directa de l'inclinació de l'eix de rotació i l'excentricitat a l'hora de generar un analema. Per realitzar aquest anàlisi s'han proposat diversos planetes i s'ens demana de plotejar l'analema solar per cadascún d'ells. Les dades dels planetes es poden trobar en la taula \ref{tab:planetes}.
+\noindent Finalment, per aquest últim apartat, s'intentarà observar la influència directa de l'inclinació de l'eix de rotació i l'excentricitat a l'hora de generar un analema. Per realitzar aquest anàlisi s'han proposat diversos planetes i s'ens demana de graficar l'analema solar per cadascún d'ells. Les dades dels planetes es poden trobar en la taula \ref{tab:planetes}.
 
 \vspace{2mm}
 \begin{table}[h!]
@@ -383,9 +388,9 @@ FIG: analema real
         \hline
         Mercuri & 0.03 & 0.21 \\
         Terra & 23.44 & 0.0167 \\
-        Mart & 25.19 & 0.093 \\
+        Mart & 25.19 & 0.0934 \\
         Júpiter & 3.13 & 0.0485 \\
-        Saturn & 26.73 & 0.056 \\
+        Saturn & 26.73 & 0.0565 \\
         \hline
     \end{tabular}
     \caption{Dades dels planetes. Font: analemma.com \cite{PLANETES}.}
@@ -393,7 +398,50 @@ FIG: analema real
 \end{table}
 \vspace{2mm}
 
-\noindent Per realitzar una bona comparativa, s'han generat els analemes per cada planeta i s'han comparat amb el observat si ens localitzem en el planeta en qüestió a l'Stellarium i augmentem els díes. A l'annex es poden trobar les gràfiques generades per cada planeta. Per realitzar aquest apartat s'ha escrit un nou script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu $analema\_planetes.py$. El codi et calcula la declinació del sol a cada planeta, et calcula la diferència entre el temps solar mitjà i el temps solar aparent a partir d'una versió de l'equació del temps diferent a la de l'exercici 6 i, finalment, et grafica l'analema solar vist des de cadascún dels planetes. L'equació del temps utilitzada en aquest apartat és $EoT = M - ra$ (On $ra$ és l'ascensió recta del sol i $M$ és l'anomalia mitjana) i, ara, $M$ i $ra$ es troben emprant l'expressió exacta de l'exercici 4 truncada a 20 termes de la sèrie de Bessel. A més, s'ha obtingut la declinació i no s'ha emprat la llibreria ephem, ja que la llibreria et troba la declinació del sol vist des de la Terra. Aquests canvis es deuen a que és necesàri modificar els paràmetres de les òrbites planetàries i, per tant, no es pot emprar el codi $analema.py$.
+\noindent Per realitzar una bona comparativa, s'han generat els analemes per a cada planeta i s'han comparat amb l'observat si ens localitzem en el planeta en qüestió a l'Stellarium, emprant el mètode expressat en l'exercici 7 per observar l'analema. En aquest cas, però, cal tenir en compte alguns detalls. Si es fa ús d'un rang temporal d'un any i un pas de temps de 15 dies solars, com a la Terra, no s'obtindrà un analema en aquell planeta. Per obtenir l'analema en aquell planeta, s'ha d'utilitzar un rang temporal d'un any d'aquell planeta, amb un pas de temps que ha de ser múltiple d'un dia en aquell planeta. Per exemple, Saturn i Júpiter tenen un ràtio $\frac{t_{\text{any}}}{t_{\text{dia}}} > 8500$, mentre que a la Terra és 365. Per tant, el pas de temps hauria de ser molt gran perquè el programa no trigui massa a executar-se. Finalment, cal recalcar que no es podrà tractar l'analema vist des de Mercuri. Això es deu al fet que un dia a Mercuri és més llarg que un any, per tant, no té sentit observar la posició del Sol a una mateixa hora cada dia durant un any. A la figura \ref{fig:planetes}, es poden obvservar les imatges dels analemes generats teòricament juntament amb els extrets del Stellarium.
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Mart.png}
+        \caption{Analema solar de Mart per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Mart.png}
+        \caption{Analema solar de Mart per l'Stellarium. Font: Stellarium.}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Júpiter.png}
+        \caption{Analema solar de Júpiter per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Júpiter.png}
+        \caption{Analema solar de Júpiter per l'Stellarium. Font: Stellarium.}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Saturn.png}
+        \caption{Analema solar de Saturn per Python. Font: Github del treball.}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/analema_Saturn.png}
+        \caption{Analema solar de Saturn per l'Stellarium. Font: Stellarium.}
+    \end{subfigure}
+\caption{aakalk}
+\label{fig:planetes}
+\end{figure}
+\vspace{2mm}
+
+\noindent Per realitzar aquest apartat s'ha escrit un nou script de Python que es pot trobar en el Github del treball. L'arxiu de l'script es diu $analema\_planetes.py$. El codi et calcula la declinació del sol a cada planeta, et calcula la diferència entre el temps solar mitjà i el temps solar aparent a partir d'una versió de l'equació del temps diferent a la de l'exercici 6 i, finalment, et grafica l'analema solar vist des de cadascún dels planetes. L'equació del temps utilitzada en aquest apartat és $EoT = M - ra$ (On $ra$ és l'ascensió recta del sol i $M$ és l'anomalia mitjana) i, ara, $M$ i $ra$ es troben emprant l'expressió exacta de l'exercici 4 truncada a 20 termes de la sèrie de Bessel. A més, s'ha obtingut la declinació i no s'ha emprat la llibreria ephem, ja que la llibreria et troba la declinació del sol vist des de la Terra. Aquests canvis es deuen a que és necesàri modificar els paràmetres de les òrbites planetàries i, per tant, no es pot emprar el codi $analema.py$.
 
 \vspace{2mm}
 
@@ -418,13 +466,6 @@ FIG: analema real
 %\vspace{10mm}
 %\hrule\
 %\vspace{5mm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newpage
-\section*{ANNEX}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

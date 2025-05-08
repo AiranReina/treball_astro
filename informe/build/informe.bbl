@@ -210,39 +210,6 @@
       \verb https://www.bogan.ca/orbits/kepler/e_anomly.html#:~:text=2%CF%80t%2FP%20%3D%20E%20%2D%20e,represent%20by%20the%20letter%2C%20M.
       \endverb
     \endentry
-    \entry{SCRIPT_STELLARIUM}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=d7bb0c7775d99089339915325d0e57ec}{%
-           family={Wolf},
-           familyi={W\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{d7bb0c7775d99089339915325d0e57ec}
-      \strng{fullhash}{d7bb0c7775d99089339915325d0e57ec}
-      \strng{fullhashraw}{d7bb0c7775d99089339915325d0e57ec}
-      \strng{bibnamehash}{d7bb0c7775d99089339915325d0e57ec}
-      \strng{authorbibnamehash}{d7bb0c7775d99089339915325d0e57ec}
-      \strng{authornamehash}{d7bb0c7775d99089339915325d0e57ec}
-      \strng{authorfullhash}{d7bb0c7775d99089339915325d0e57ec}
-      \strng{authorfullhashraw}{d7bb0c7775d99089339915325d0e57ec}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Analemma}
-      \field{urlday}{27}
-      \field{urlmonth}{4}
-      \field{urlyear}{2025}
-      \field{year}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://raw.githubusercontent.com/Stellarium/stellarium/master/scripts/analemma.ssc
-      \endverb
-      \verb{url}
-      \verb https://raw.githubusercontent.com/Stellarium/stellarium/master/scripts/analemma.ssc
-      \endverb
-    \endentry
     \entry{PLANETES}{online}{}{}
       \name{author}{1}{}{%
         {{hash=0b6df6ecf48bd6d3e24e9f7a48ca8661}{%
@@ -320,8 +287,8 @@
       \strng{authornamehash}{244331c98367af2d59ed28638f5c0e4b}
       \strng{authorfullhash}{244331c98367af2d59ed28638f5c0e4b}
       \strng{authorfullhashraw}{244331c98367af2d59ed28638f5c0e4b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Lunar Analemma}
