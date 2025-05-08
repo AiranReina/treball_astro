@@ -400,7 +400,6 @@
 
 \noindent Per realitzar una bona comparativa, s'han generat els analemes per a cada planeta i s'han comparat amb l'observat si ens localitzem en el planeta en qüestió a l'Stellarium, emprant el mètode expressat en l'exercici 7 per observar l'analema. En aquest cas, però, cal tenir en compte alguns detalls. Si es fa ús d'un rang temporal d'un any i un pas de temps de 15 dies solars, com a la Terra, no s'obtindrà un analema en aquell planeta. Per obtenir l'analema en aquell planeta, s'ha d'utilitzar un rang temporal d'un any d'aquell planeta, amb un pas de temps que ha de ser múltiple d'un dia en aquell planeta. Per exemple, Saturn i Júpiter tenen un ràtio $\frac{t_{\text{any}}}{t_{\text{dia}}} > 8500$, mentre que a la Terra és 365. Per tant, el pas de temps hauria de ser molt gran perquè el programa no trigui massa a executar-se. Finalment, cal recalcar que no es podrà tractar l'analema vist des de Mercuri. Això es deu al fet que un dia a Mercuri és més llarg que un any, per tant, no té sentit observar la posició del Sol a una mateixa hora cada dia durant un any. A la figura \ref{fig:planetes}, es poden obvservar les imatges dels analemes generats teòricament juntament amb els extrets del Stellarium.
 
-
 \begin{figure}[h!]
     \centering
     \begin{subfigure}{0.45\textwidth}
@@ -420,10 +419,10 @@
         \caption{Analema solar de Júpiter per Python. Font: Github del treball.}
     \end{subfigure}
     \hspace{0.05\textwidth}
-    \begin{subfigure}{0.45\textwidth}
+    \begin{subfigure}{0.42\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/analema_Júpiter.png}
-        \caption{Analema solar de Júpiter per l'Stellarium. Font: Stellarium.}
+        \includegraphics[width=\textwidth]{images/stellarium_jupiter_general.png}
+        \caption{Analema solar de Júpiter per l'StarWalk. Font: StarWalk.}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
         \centering
@@ -431,12 +430,12 @@
         \caption{Analema solar de Saturn per Python. Font: Github del treball.}
     \end{subfigure}
     \hspace{0.05\textwidth}
-    \begin{subfigure}{0.45\textwidth}
+    \begin{subfigure}{0.42\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/analema_Saturn.png}
-        \caption{Analema solar de Saturn per l'Stellarium. Font: Stellarium.}
+        \includegraphics[width=\textwidth]{images/stellarium_saturn_general.png}
+        \caption{Analema solar de Saturn per l'StarWalk. Font: StarWalk.}
     \end{subfigure}
-\caption{Analemes generats a l'Stellarium i per Python de diversos planetes del sistema solar.}
+\caption{Analemes generats a l'Stellarium, compartits per StarWalk i generats per Python en diversos planetes del sistema solar.}
 \label{fig:planetes}
 \end{figure}
 \vspace{2mm}
@@ -445,7 +444,7 @@
 
 \vspace{2mm}
 
-\noindent Com es pot observar, els analemes són similars però presenten diferències apreciables. De fet, les diferències són similars a les que es podien observar des de la Terra. IMPORTANTE ACABAR AKAKALLAMKAKALAÑÑAÑA
+\noindent Com es pot observar, no s'han pogut comparar tots els analemes amb l'Stellarium. Això es deu a que no funciona correctament amb planetes amb díes tan curts i anys tan llargs com Júpiter o Saturn (A més, el fet que siguin planetes gasosos no ajuda tampoc doncs la definició de día és ambigüa). Per poder comparar doncs els analemes graficats per aquests planetes, s'han emprat els que ens proporciona 'StarWalk' \cite{STARWALK}. Si es compara el analema teóric amb l'observat per l'Stellarium de Mart, es veu el mateix efecte que amb la Terra. La figura té una tendència similar però no es veu idèntic. Això es deu als mateixos efectes que amb la Terra, l'Stellarium grafica en unes coordenades sobre una esfera mentre que el gràfic sobre un pla, la teórica és una aproximació, etc. Amb els altres dos planetes no es pot dir massa doncs són analemes corresponents a una altra hora i latitud segurament. Igualment, es pot veure que Júpiter té una tendencia ovalada i inclinada i Saturn una forma de gota, així que es pot suposar que és correcte.
 
 \vspace{2mm}
 
@@ -470,12 +469,14 @@
 \end{figure}
 \vspace{2mm}
 
-\noindent El recorregut de l'analema és interessant ja que té forma de vuit, està bastant inclinat i té un 'loop' prim i un de gruixut. Sembla ser com els dels altres planetes, però té una diferència notable. Sembla ser que no és tancat, doncs si s'observa el principi d'any lunar amb el final, no arriben a coincidir. Aquesta no és una propietat única de l'analema lunar, de fet, tots els analemes tenen aquesta propietat. La diferencia prové del fet que un 'any lunar' és molt més petit que l'any d'un planeta al voltant del sol, per tant, la variació día a dia és molt gran. L'analema depén lleugerament del any en el que es comença a fotografiar, per tant, no pot tenir les mateixes condicions al final que al inici tampoc.
+\noindent El recorregut de l'analema és interessant ja que té forma de vuit, està bastant inclinat i té un 'loop' prim i un de gruixut. Sembla ser com els dels altres planetes, però té una diferència notable. Sembla ser que no és tancat, doncs si s'observa el principi d'any lunar amb el final, no arriben a coincidir. Aquesta no és una propietat única de l'analema lunar, de fet, tots els analemes tenen aquesta propietat. La diferencia prové del fet que un 'any lunar' és molt més petit que l'any d'un planeta al voltant del sol, per tant, la variació día a dia és molt gran. L'analema depén lleugerament del any en el que es comença a fotografiar, per tant, no pot tenir les mateixes condicions al final que al inici tampoc. Aquesta observació també es pot observar en la imatge de referència del analema lunar en la figura \ref{fig:analema_luna}.
 
 
-%\vspace{10mm}
-%\hrule\
-%\vspace{5mm}
+\vspace{10mm}
+\hrule\
+\vspace{5mm}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

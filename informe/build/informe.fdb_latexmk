@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"] 1746705936.14303 "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe" 1746717746.77804 0
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" 1746717746.45056 109178 7d2b9b547e5da6b596e48d9567ffb2c9 ""
-  "bib.bib" 1746008604.45183 1970 3c19761a745af5e22ffc1017368301d8 ""
+["biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"] 1746723583.82278 "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe" 1746724416.59679 0
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bcf" 1746724416.29702 109242 8a077f49a16f72acf76ecd6dba6b8d0f ""
+  "bib.bib" 1746723518.13617 2179 c1dc625caab004c6a9a99cd3d25f1538 ""
   (generated)
   "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl"
   "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.blg"
   (rewritten before read)
-["biber build/informe"] 1746705917.76145 "build/informe.bcf" "build/informe.bbl" "build/informe" 1746717746.77667 0
-  "bib.bib" 1746008604.45183 1970 3c19761a745af5e22ffc1017368301d8 ""
-  "build/informe.bcf" 1746717746.45056 109178 7d2b9b547e5da6b596e48d9567ffb2c9 "pdflatex"
+["biber build/informe"] 1746723581.54303 "build/informe.bcf" "build/informe.bbl" "build/informe" 1746724416.59566 0
+  "bib.bib" 1746723518.13617 2179 c1dc625caab004c6a9a99cd3d25f1538 ""
+  "build/informe.bcf" 1746724416.29702 109242 8a077f49a16f72acf76ecd6dba6b8d0f "pdflatex"
   (generated)
   "build/informe.bbl"
   "build/informe.blg"
   (rewritten before read)
-["pdflatex"] 1746717740.13905 "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" "build/informe.pdf" "informe" 1746717746.77926 0
+["pdflatex"] 1746724410.59196 "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" "build/informe.pdf" "informe" 1746724416.59793 0
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745320845.48625 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1745569660.63614 12668 362fcdff1057ca5ca1f5529c68238b75 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk" 1745501289.8507 15464 432c85c2f2690b3b3a32b3c28ce02c06 ""
@@ -155,14 +155,14 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1730400552 10214 61188260d324e94bc2f66825d7d3fdf4 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.aux" 1746717746.44597 6530 ccf80abd5b6c2631d79c9689389930f0 ""
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" 1746705941.95032 12227 01e751f1b611e24974201a74094d026b "biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"
-  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.out" 1746717741.40533 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "build/informe.aux" 1746717746.44597 6530 ccf80abd5b6c2631d79c9689389930f0 "pdflatex"
-  "build/informe.bbl" 1746705941.95032 12227 01e751f1b611e24974201a74094d026b "biber build/informe"
-  "build/informe.out" 1746717741.40533 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "build/informe.run.xml" 1746717746.45263 2360 4c26a45d7cdd3d1cf623487293ddf3f3 "pdflatex"
-  "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" 1746717739.17581 38548 54bf57e5c1ad3ebd44f5bd0de51eeee1 ""
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.aux" 1746724416.29202 6730 313b9350c6d283329cc5ea192cf32dc1 ""
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.bbl" 1746723586.7773 13504 61f5e116a454981a6461595185ccd26f "biber C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe"
+  "C:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/build/informe.out" 1746724411.69105 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "build/informe.aux" 1746724416.29202 6730 313b9350c6d283329cc5ea192cf32dc1 "pdflatex"
+  "build/informe.bbl" 1746723586.7773 13504 61f5e116a454981a6461595185ccd26f "biber build/informe"
+  "build/informe.out" 1746724411.69105 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "build/informe.run.xml" 1746724416.29901 2360 4c26a45d7cdd3d1cf623487293ddf3f3 "pdflatex"
+  "c:/Users/Usuario/repos/entregas/entregas2025/entrega_astro/informe/informe.tex" 1746724408.72436 39570 65e04b550696bd62da9fb3bd783fa031 ""
   "images/Logo_uab.png" 1745321769.59889 137357 901e0a379faa11529a5403fed03c5ce3 ""
   "images/analema.png" 1745326468.21555 34220 11dc368e0c31f320e30fa9ba6cb51f12 ""
   "images/analema_Júpiter.png" 1746707614.95544 257678 e8702d921c5e5fb651a0aa3911b137d4 ""
@@ -177,7 +177,9 @@
   "images/analema_simUAB_invert.png" 1746618438.53495 415395 1f12a5673a60e49cb08fa99d9593f1a4 ""
   "images/esquema_orbites.png" 1745394356.20652 35989 1c24565a69528387375ba00910b0c11f ""
   "images/esquema_posicio.png" 1745394827.26525 38963 bcc3035a1cc7f32dbe91263b8c22b968 ""
+  "images/stellarium_jupiter_general.png" 1746723586.84131 75428 24ef18707f7d5658c83b0926f682ed90 ""
   "images/stellarium_mart_12.png" 1746702338.60496 741994 a127bded892bef2997041485cd07f5f1 ""
+  "images/stellarium_saturn_general.png" 1746723613.16606 72699 d769e7f1bd75b2b8b848b1cb72477615 ""
   "images/stellarium_terra_16.png" 1746701739.95477 572457 083ff37f1abeed6de6c982ac8160d103 ""
   (generated)
   "build/informe.aux"

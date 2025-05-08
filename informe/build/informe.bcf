@@ -2392,9 +2392,10 @@
     <bcf:citekey order="15" intorder="1">EQ_OF_TIME</bcf:citekey>
     <bcf:citekey order="16" intorder="1">PLANETES</bcf:citekey>
     <bcf:citekey order="17" intorder="1">PLANETES</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">LLUNA</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">ANALEMA_MOON</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">STARWALK</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">LLUNA</bcf:citekey>
     <bcf:citekey order="20" intorder="1">ANALEMA_MOON</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">ANALEMA_MOON</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

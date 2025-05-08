@@ -240,6 +240,37 @@
       \verb https://analemma.com/other-analemmas.html
       \endverb
     \endentry
+    \entry{STARWALK}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f25d457bc6e3d16c67f6b9784c1aae79}{%
+           family={StarWalk},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \strng{fullhash}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \strng{fullhashraw}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \strng{bibnamehash}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \strng{authorbibnamehash}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \strng{authornamehash}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \strng{authorfullhash}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \strng{authorfullhashraw}{f25d457bc6e3d16c67f6b9784c1aae79}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analemma Explained: How To Make It Easily}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://starwalk.space/en/news/analemma-definition
+      \endverb
+      \verb{url}
+      \verb https://starwalk.space/en/news/analemma-definition
+      \endverb
+    \endentry
     \entry{LLUNA}{online}{}{}
       \name{author}{1}{}{%
         {{hash=1f99771bc3e23e6097509a331544ab65}{%
@@ -287,8 +318,8 @@
       \strng{authornamehash}{244331c98367af2d59ed28638f5c0e4b}
       \strng{authorfullhash}{244331c98367af2d59ed28638f5c0e4b}
       \strng{authorfullhashraw}{244331c98367af2d59ed28638f5c0e4b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Lunar Analemma}
