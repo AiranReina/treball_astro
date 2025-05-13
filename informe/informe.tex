@@ -60,7 +60,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \vspace{4mm} 
-    \noindent En la realització del treball s'ha generat contingut pròpi que, amb intenció de simplificar el treball del corrector, s'ha agrupat en un Github. El link del Github és el següent: \url{https://github.com/AiranReina/treball_astro/tree/main}. Allà es troba un README.md que resumeix els arxius d'interés en el treball i les seves localitzacions. 
+    \noindent En la realització del treball s'ha generat contingut pròpi que, amb intenció de simplificar el treball del corrector, s'ha agrupat en un Github. El link del Github és el següent: \url{https://github.com/AiranReina/treball_astro}. Allà es troba un README.md que resumeix els arxius d'interés en el treball i les seves localitzacions. 
     \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -247,11 +247,11 @@
 \end{equation}
 \vspace{2mm}
 
-\noindent És interessant observar com l'equació del temps està relacionada directament amb el temps sideral aparent o, simplement, el temps sideral ($T_{sideral}$). Mentre que el temps solar es basa en la rotació de la Terra en relació amb el Sol, el temps sideral es basa en la rotació de la Terra respecte a les estrelles fixes del cel. Un dia sideral té una durada de 23 hores, 56 minuts i 4 segons, mentre que un dia solar, que és el temps que mesuren els rellotges habituals, té una durada de 24 hores. Aquesta diferència es deu al fet que la Terra, a mesura que rota sobre el seu eix, també es mou una mica en la seva òrbita al voltant del Sol, i per tant necessita fer una mica més de rotació per tornar a situar el Sol en la mateixa posició al cel.
+\noindent És interessant observar com l'equació del temps està relacionada directament amb el temps sideral aparent o, simplement, el temps sideral ($GAST$). Mentre que el temps solar es basa en la rotació de la Terra en relació amb el Sol, el temps sideral es basa en la rotació de la Terra respecte a les estrelles fixes del cel. Un dia sideral té una durada de 23 hores, 56 minuts i 4 segons, mentre que un dia solar, que és el temps que mesuren els rellotges habituals, té una durada de 24 hores. Aquesta diferència es deu al fet que la Terra, a mesura que rota sobre el seu eix, també es mou una mica en la seva òrbita al voltant del Sol, i per tant necessita fer una mica més de rotació per tornar a situar el Sol en la mateixa posició al cel.
 
 \vspace{2mm}
 
-\noindent Per definició, l'equació del temps és $EoT = t_{\text{aparent}} - t_{\text{mitjà}} \equiv GHA - GMHA$. $GHA$ significa "Greenwich Hour Angle" i $GMHA$ "Greenwich Mean Hour Angle". $GMHA \equiv UT - \text{offset}$, on l'\textit{offset} és el temps mig solar quan el Sol està en el meridià de Greenwich, és a dir, les 12h (migdia solar mitjà). D'altra banda, si seguim les definicions dels angles de l'esfera celeste, $GHA = GAST - \alpha$, on $GAST$ és el "Greenwich Apparent Sidereal Time" i $\alpha$ és l'ascensió recta. Si juntem totes les relacions, ens dona una expressió que relaciona directament l'equació del temps amb el temps sideral.
+\noindent Per definició, l'equació del temps és $EoT = t_{\text{aparent}} - t_{\text{mitjà}} \equiv GHA - GMHA$. $GHA$ significa 'Greenwich Hour Angle' i $GMHA$ 'Greenwich Mean Hour Angle'. $GMHA \equiv UT - \text{offset}$, on l'\textit{offset} és el temps mig solar quan el Sol està en el meridià de Greenwich, és a dir, les 12h (migdia solar mitjà). D'altra banda, si seguim les definicions dels angles de l'esfera celeste, $GHA = GAST - \alpha$, on $GAST$ és el 'Greenwich Apparent Sidereal Time' i $\alpha$ és l'ascensió recta. Si juntem totes les relacions, ens dona una expressió que relaciona directament l'equació del temps amb el temps sideral.
 
 \begin{equation}
     EoT = GAST - \alpha - UT + offset
@@ -353,7 +353,7 @@
 \end{figure}
 \vspace{2mm}
 
-\noindent Com es pot veure si es compara amb la imatge de la dreta de la figura \ref{fig:analema_terra}, ambdós analemes són, en esència, el mateix. Els dos es troben inclinats cap a la dreta i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud proper als $37 \degree$ i un mínim d'altitud proper als $5 \degree$. També, es pot observar que els dos analemes estàn limitats en un azimut entre, més o menys, $230 \degree$ i $270 \degree$. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. Igualment, es troba que no cuadren entre els valors de forma exacta. Això es deu a que el trobat teòricament és una aproximació mentre que l'stellarium empra models astronòmics avançats i dades de precisió directament extrets de agències espaials importants. També, es pot veure una petita variació en la forma, aquest efecte es deu a que la imatge generada teóricament està representada en un eix pla mentre que, l'Stellarium, t'ho mostra en uns eixos esfèrics (A més del ja anomenat efecte per aproximació).
+\noindent Com es pot veure si es compara amb la imatge de la dreta de la figura \ref{fig:analema_terra}, ambdós analemes són, en esència, el mateix. Els dos es troben inclinats cap a la dreta i tenen una forma de vuit. El loop superior és més prim i petit que el loop inferior. Els dos analemes tenen un màxim d'altitud proper als $37 \degree$ i un mínim d'altitud proper als $5 \degree$. També, es pot observar que els dos analemes estàn limitats en un azimut entre, més o menys, $230 \degree$ i $270 \degree$. Amb aquest anàlisi, es pot concloure que, aproximadament, són equivalents. Igualment, es troba que no quadren entre els valors de forma exacta. Això es deu a que el trobat teòricament és una aproximació mentre que l'stellarium empra models astronòmics avançats i dades de precisió directament extrets de agències espaials importants. També, es pot veure una petita variació en la forma, aquest efecte es deu a que la imatge generada teóricament està representada en un eix pla mentre que, l'Stellarium, t'ho mostra en uns eixos esfèrics (A més del ja anomenat efecte per aproximació).
 
 \vspace{10mm}
 \hrule\

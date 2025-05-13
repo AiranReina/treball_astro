@@ -1,11 +1,23 @@
-# LLEGIR PER ENTENDRE EL GITHUB
+# 📘 Guia del repositori: *LLIURAMENT D'INTRODUCCIÓ A L'ASTROFÍSICA — UNDERSTANDING ANALEMMAS*
 
-Aquest Github consta de 3 parts principals. Primer de tot, trobem els codis que grafiquen analemes; després, en la carpeta informe/ es poden trobar les imatges generades i emprades en l'informe (En la carpeta images/) i, en la carpeta build/, arxius necesàris per poder generar un document LaTeX com és l'informe.
+Aquest repositori conté tot el material generat per al lliurament de l’assignatura **Introducció a l’Astrofísica** (2025), elaborat per l’alumne **Airan Reina Delgado** (NIU: 1670808). Està estructurat en tres parts principals: els scripts de Python per generar analemes, les imatges utilitzades a l’informe, i els arxius per compilar l’informe en LaTeX.
 
-# ARXIUS IMPORTANTS:
+---
 
-- analema.py: L'arxiu Python que ens calcula, en diverses coordenades, la posició del sol al llarg de l'any en la bòveda celeste terrestre i ploteja l'analemma solar a la Terra.
+## 📁 Estructura del repositori
 
-- analema_planetes.py: L'arxiu Python que generalitza l'arxiu anterior per generar analemes en altres planetes del sistema solar.
+- `analema.py`: Script en Python que calcula la posició del Sol al llarg de l’any, vist des de la Terra, i genera l'analemma solar. Inclou també el codi necessari per comparar els analemes amb els que es poden observar a l’entrada de la Facultat de Ciències de la UAB.
 
-- informe/images/: Carpeta ón es troben les imatges generades pels scripts de Python i altres imatges necesàries per l'informe
+- `analema_planetes.py`: Extensió del codi anterior per generar analemes vistos des de diferents planetes del sistema solar, considerant l’excentricitat, l’obliqüitat i el període orbital de cada cas.
+
+- `moon.py`: Versió adaptada per generar l’analema lunar, tal com s’observa des de la Terra.
+
+- `informe/images/`: Carpeta que conté totes les imatges generades pels scripts Python, així com altres gràfics utilitzats a l’informe escrit.
+
+- `informe/build/`: Arxius necessaris per a la compilació del document LaTeX que constitueix l’informe final.
+
+---
+
+## 📌 Nota per al corrector
+
+Aquest repositori ha estat dissenyat per facilitar la revisió del treball. Es recomana començar pels scripts `analema.py`, `analema_planetes.py` i `moon.py`, i després consultar les imatges generades a `informe/images/`.

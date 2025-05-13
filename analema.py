@@ -6,8 +6,8 @@ from scipy.special import jn
 e = 0.0167
 eps_deg = 23.44
 eps = np.radians(eps_deg)
-varpi_deg = 102.937348 + 180
-varpi = np.radians(varpi_deg)
+varphi_deg = 102.937348 + 180
+varphi = np.radians(varphi_deg)
 N_terms = 20
 tau = 1.07
 days = np.linspace(0, 365.25, 1000)
@@ -18,7 +18,7 @@ E_series = M.copy()
 for n in range(1, N_terms + 1):
     E_series += (2 / n) * jn(n, n * e) * np.sin(n * M)
 nu = np.arctan2(np.sqrt(1 - e**2) * np.sin(E_series), np.cos(E_series) - e)
-lambda_sun_earth = (nu + varpi) % (2 * np.pi)
+lambda_sun_earth = (nu + varphi) % (2 * np.pi)
 
 alpha = np.unwrap(np.arctan2(np.cos(eps) * np.sin(lambda_sun_earth), np.cos(lambda_sun_earth)))
 EOT_rad = M - alpha

@@ -74,7 +74,7 @@ for planet, param in planets.items():
     
     # Realitzem els càlculs necesàris
     e = param['e']
-    varpi = np.radians(param['varpi_deg'])
+    varphi = np.radians(param['varpi_deg'])
     eps = np.radians(param['eps_deg'])
     tau = param['tau']
     T = param['period']
@@ -86,7 +86,7 @@ for planet, param in planets.items():
         E += (2 / n) * jn(n, n * e) * np.sin(n * M)
 
     nu = np.arctan2(np.sqrt(1 - e**2) * np.sin(E), np.cos(E) - e)
-    lamb = (nu + varpi) % (2 * np.pi)
+    lamb = (nu + varphi) % (2 * np.pi)
     alpha = np.unwrap(np.arctan2(np.cos(eps) * np.sin(lamb), np.cos(lamb)))
     delta = np.arcsin(np.sin(eps) * np.sin(lamb))
 
